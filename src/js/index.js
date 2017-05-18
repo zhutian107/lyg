@@ -77,22 +77,23 @@ ajax.ajaxFn({
     errorFn:function(err){
     }
 });
-// var lis = document.querySelectorAll('.spans span');
-// var divs = document.querySelectorAll('.divs div');
-// for (var i = 0; i < lis.length; i++) {
-//             lis[i].index = i;
-//             lis[i].onmouseover = function(){
-//                 for (var j = 0; j < divs.length; j++) {
-//                     divs[j].style.display="none";
-//                 }
-//                 divs[this.index].style.display= "block";
-//                 for (var k = 0; k < lis.length; k++) {
-//                     lis[k].style.background="";
-//                 }
-//                 this.style.background="white";
-//             }
-//           }
-//         lis[0].style.background="white";
+var lis = document.querySelectorAll('.spans span');
+var divs = document.querySelectorAll('.divs div');
+for (var i = 0; i < lis.length; i++) {
+            lis[i].index = i;
+            lis[i].onmouseover = function(){
+                for (var j = 0; j < divs.length; j++) {
+                    $('.divs div').eq(j).hide();
+                }
+                $('.divs div').eq(this.index).show();
+                for (var k = 0; k < lis.length; k++) {
+                    lis[k].style.background="";
+                }
+                this.style.background="white";
+
+            }
+          }
+        lis[0].style.background="white";
 ajax.ajaxFn({
     url:"data/01.json",
     data:{

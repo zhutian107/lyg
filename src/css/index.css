@@ -175,37 +175,38 @@ html {
       overflow: hidden; }
       #wrap .green .divs div {
         width: 100%;
-        height: 100%;
+        height: 100%; }
+      #wrap .green .divs #sw {
         display: flex; }
-      #wrap .green .divs #sw ul {
-        width: 37rem;
-        height: 34.5rem;
-        background: #fff;
-        display: flex;
-        margin-left: 3%; }
-        #wrap .green .divs #sw ul li {
-          width: 100%;
-          height: 100%; }
-          #wrap .green .divs #sw ul li .data_name {
-            font-size: 2.2rem;
-            font-weight: bold;
-            line-height: 5.2rem; }
-          #wrap .green .divs #sw ul li .data_main {
-            border-top: 0.1rem solid #ccc;
-            background: #f8f8f8; }
-          #wrap .green .divs #sw ul li p {
-            line-height: 5.2rem; }
-            #wrap .green .divs #sw ul li p mark {
-              color: red;
-              font-size: 3rem; }
-            #wrap .green .divs #sw ul li p .btn-danger {
-              float: right;
-              margin-right: 2rem; }
-          #wrap .green .divs #sw ul li img {
-            width: 34rem;
-            height: 14.8rem;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem; }
+        #wrap .green .divs #sw ul {
+          width: 37rem;
+          height: 34.5rem;
+          background: #fff;
+          display: flex;
+          margin-left: 3%; }
+          #wrap .green .divs #sw ul li {
+            width: 100%;
+            height: 100%; }
+            #wrap .green .divs #sw ul li .data_name {
+              font-size: 2.2rem;
+              font-weight: bold;
+              line-height: 5.2rem; }
+            #wrap .green .divs #sw ul li .data_main {
+              border-top: 0.1rem solid #ccc;
+              background: #f8f8f8; }
+            #wrap .green .divs #sw ul li p {
+              line-height: 5.2rem; }
+              #wrap .green .divs #sw ul li p mark {
+                color: red;
+                font-size: 3rem; }
+              #wrap .green .divs #sw ul li p .btn-danger {
+                float: right;
+                margin-right: 2rem; }
+            #wrap .green .divs #sw ul li img {
+              width: 34rem;
+              height: 14.8rem;
+              margin-left: 1.5rem;
+              margin-bottom: 1rem; }
     #wrap .green .spans {
       width: 20%;
       height: 2rem;
