@@ -142,13 +142,22 @@ html {
       margin-top: 2rem; }
       #wrap .imgs ul li {
         width: 100%;
-        height: 30rem; }
+        height: 30rem;
+        position: relative; }
+        #wrap .imgs ul li #mask {
+          width: 100%;
+          height: 18rem;
+          background: rgba(72, 204, 155, 0.7);
+          position: absolute;
+          display: none; }
         #wrap .imgs ul li img {
           width: 99%;
           height: 18rem;
           box-sizing: border-box; }
         #wrap .imgs ul li p {
           padding: 1rem; }
+      #wrap .imgs ul li:hover #mask {
+        display: block; }
   #wrap .jing_2 {
     width: 100%;
     height: 29.5rem; }
@@ -164,7 +173,7 @@ html {
   #wrap .green {
     width: 100%;
     height: 63.5rem;
-    background: #64D281; }
+    background: linear-gradient(to bottom, rgba(0, 200, 0, 0.7) 2%, rgba(0, 255, 0, 0.5) 40%, rgba(45, 206, 216, 0) 100%); }
     #wrap .green h2 {
       text-align: center;
       color: white;
@@ -207,6 +216,47 @@ html {
               height: 14.8rem;
               margin-left: 1.5rem;
               margin-bottom: 1rem; }
+      #wrap .green .divs #sw_1, #wrap .green .divs #sw_2, #wrap .green .divs #sw_3, #wrap .green .divs #sw_4 {
+        width: 100%;
+        height: 34rem;
+        display: flex;
+        flex-wrap: wrap;
+        float: left; }
+        #wrap .green .divs #sw_1 dl, #wrap .green .divs #sw_2 dl, #wrap .green .divs #sw_3 dl, #wrap .green .divs #sw_4 dl {
+          width: 30%;
+          height: 16rem;
+          background: #fff;
+          display: flex;
+          margin-left: 2%; }
+          #wrap .green .divs #sw_1 dl dt, #wrap .green .divs #sw_2 dl dt, #wrap .green .divs #sw_3 dl dt, #wrap .green .divs #sw_4 dl dt {
+            width: 16rem;
+            height: 16rem; }
+            #wrap .green .divs #sw_1 dl dt img, #wrap .green .divs #sw_2 dl dt img, #wrap .green .divs #sw_3 dl dt img, #wrap .green .divs #sw_4 dl dt img {
+              width: 14rem;
+              height: 14rem;
+              margin: 1rem; }
+          #wrap .green .divs #sw_1 dl dd, #wrap .green .divs #sw_2 dl dd, #wrap .green .divs #sw_3 dl dd, #wrap .green .divs #sw_4 dl dd {
+            width: 21rem; }
+            #wrap .green .divs #sw_1 dl dd a, #wrap .green .divs #sw_2 dl dd a, #wrap .green .divs #sw_3 dl dd a, #wrap .green .divs #sw_4 dl dd a {
+              font-size: 2rem;
+              color: black;
+              text-decoration: none; }
+            #wrap .green .divs #sw_1 dl dd a:hover, #wrap .green .divs #sw_2 dl dd a:hover, #wrap .green .divs #sw_3 dl dd a:hover, #wrap .green .divs #sw_4 dl dd a:hover {
+              color: green; }
+            #wrap .green .divs #sw_1 dl dd p, #wrap .green .divs #sw_2 dl dd p, #wrap .green .divs #sw_3 dl dd p, #wrap .green .divs #sw_4 dl dd p {
+              width: 20rem;
+              line-height: 5rem; }
+              #wrap .green .divs #sw_1 dl dd p mark, #wrap .green .divs #sw_2 dl dd p mark, #wrap .green .divs #sw_3 dl dd p mark, #wrap .green .divs #sw_4 dl dd p mark {
+                color: red;
+                font-size: 2rem; }
+              #wrap .green .divs #sw_1 dl dd p .long_1, #wrap .green .divs #sw_2 dl dd p .long_1, #wrap .green .divs #sw_3 dl dd p .long_1, #wrap .green .divs #sw_4 dl dd p .long_1 {
+                float: right; }
+            #wrap .green .divs #sw_1 dl dd .dd_2, #wrap .green .divs #sw_2 dl dd .dd_2, #wrap .green .divs #sw_3 dl dd .dd_2, #wrap .green .divs #sw_4 dl dd .dd_2 {
+              margin-left: 13rem; }
+        #wrap .green .divs #sw_1 dl:hover, #wrap .green .divs #sw_2 dl:hover, #wrap .green .divs #sw_3 dl:hover, #wrap .green .divs #sw_4 dl:hover {
+          -webkit-box-shadow: 0 0 10px #666;
+          -moz-box-shadow: 0 0 10px #666;
+          box-shadow: 0 0 10px #666; }
     #wrap .green .spans {
       width: 20%;
       height: 2rem;
@@ -217,3 +267,70 @@ html {
         width: 3rem;
         height: 1rem;
         border: 0.1rem solid #fff; }
+    #wrap .green .kan {
+      text-align: center; }
+      #wrap .green .kan button {
+        width: 21.6rem;
+        height: 5rem;
+        font-size: 1.6rem; }
+  #wrap .green_1 {
+    width: 100%;
+    height: 85rem;
+    /*background: lightgreen;*/ }
+    #wrap .green_1 .divs_1 {
+      width: 100%;
+      height: 65rem;
+      overflow: hidden; }
+      #wrap .green_1 .divs_1 div {
+        width: 100%;
+        height: 100%; }
+      #wrap .green_1 .divs_1 ul {
+        width: 23%;
+        height: 30rem;
+        border: 0.1rem solid #ccc;
+        float: left;
+        margin-left: 2rem;
+        margin-top: 2rem; }
+        #wrap .green_1 .divs_1 ul li {
+          width: 100%;
+          height: 30rem;
+          overflow: hidden; }
+          #wrap .green_1 .divs_1 ul li img {
+            width: 99%;
+            height: 18rem;
+            box-sizing: border-box;
+            transition: all 2s; }
+          #wrap .green_1 .divs_1 ul li p {
+            padding: 1rem; }
+        #wrap .green_1 .divs_1 ul li:hover img {
+          transform: scaleX(1.4); }
+    #wrap .green_1 .spans_1 {
+      width: 20%;
+      height: 2rem;
+      display: flex;
+      justify-content: space-around;
+      margin: 3rem auto; }
+      #wrap .green_1 .spans_1 span {
+        width: 3rem;
+        height: 1rem;
+        border: 0.1rem solid #ccc;
+        background: #ccc; }
+    #wrap .green_1 .kan {
+      text-align: center; }
+      #wrap .green_1 .kan button {
+        width: 21.6rem;
+        height: 5rem;
+        font-size: 1.6rem; }
+  #wrap footer {
+    width: 100%;
+    height: 20rem;
+    background: lightgreen; }
+    #wrap footer h5 {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 5rem;
+      line-height: 5rem; }
+    #wrap footer p {
+      font-size: 1.6rem;
+      text-align: center;
+      line-height: 6rem; }
