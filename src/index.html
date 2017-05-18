@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+		    <div class="header_left">
+				<img src="images/logo.png">
+	            <a href="#">目的地</a>
+	            <a href="#">锦囊</a>
+	            <a href="#">行程助手</a>
+	            <a href="#">社区<span class="glyphicon glyphicon-menu-down"></span></a>
+	            <a href="#">商城</a>
+	            <div class="shopMark">
+	            	<img src="images/icon-recommend.gif"><img src="images/icon-recommend-arrow.png" class="arrow">
+	            </div>
+	            <a href="#">机票</a>
+	            <a href="#">酒店</a>
+	            <a href="#">预定<span class="glyphicon glyphicon-menu-down"></span></a>
+            </div>
+            <div class="header_right">
+            	<input type="text" name="" class="txt">
+            	<a href="#" class="glyphicon glyphicon-search" id="sou"></a>
+            	<span>|</span>
+            	<span class="glyphicon glyphicon-user">
+            	<span class="glyphicon glyphicon-phone-alt">
+            	<span class="glyphicon glyphicon-wrench">
+            	<a href="#">注册</a><a href="#">登录</a> 
+            	
+            </div>
+		</header>
+		<div class="baidusou">
+			<ul id="uls">
+			    <li>我是li1</li>
+			    <li>我是li2</li>
+			    <li>我是li3</li>
+			    <li>我是li4</li>
+			    <li>我是li5</li>			    
+			    <li>我是li6</li>			    
+			</ul>
+		</div> 
+		<div id="swiper">
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"></div>
+		            <div class="swiper-slide"></div>
+		            <div class="swiper-slide"></div>
+		            <div class="swiper-slide"></div>
+		            <div class="swiper-slide"></div>
+		        </div>
+	            <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+	        </div>
+        </div>
+        <div class="jing_1">
+        	<img src="images/4.jpg" alt="" class="img_1"><img src="images/5.jpg" alt="" class="img_2">
+
+        </div>
+        <h1>猜你感兴趣</h1>
+        <div class="imgs">
+        	<!--<ul class="ul_1">
+        		 <li><img src="images/01.jpg"><p>哈哈哈哈还是我挥洒的付款计划</p><p><span>加厚设计的</span><span>1221浏览过</span></p></li> 
+        	</ul>-->
+
+        </div>
+        <div class="jing_2">
+        	<img src="images/1.jpg" alt="" class="img_3"><img src="images/2.jpg" alt="" class="img_4">
+        </div>
+        <div class="green">
+        	<h2>穷游商城</h2>
+        	<div class="divs">
+        		<div id="sw"></div>
+        		<div id="sw_1"></div>
+        		<div></div>
+        		<div></div>
+        		<div></div>
+        	</div>
+        	<div class="spans">
+        		<span></span>
+        		<span></span>
+        		<span></span>
+        		<span></span>
+        		<span></span>
+        	</div>
+        </div>
+	</div>
+</body>
+<script type="text/javascript">
+    var arr = [];
+    function callBackFn(data){
+        arr = data.s;
+    }
+</script>
+<script type="text/javascript" src='js/jquery-3.1.1.js'></script>
+<script type="text/javascript" src='js/ajax.js'></script>
+<script type="text/javascript" src='js/index.js'></script>
+
+</html>
