@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; }
+
+a {
   text-decoration: none; }
 
 html {
@@ -114,6 +116,76 @@ html {
         #wrap #swiper .swiper-container .swiper-slide img {
           width: 100%;
           height: 400px; }
+  #wrap .tu_jing {
+    width: 62rem;
+    /*height: 10.5rem;*/
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 20rem;
+    left: 28%;
+    z-index: 99999;
+    border-radius: 1rem; }
+    #wrap .tu_jing nav {
+      width: 100%;
+      display: flex;
+      line-height: 5rem;
+      justify-content: space-around; }
+      #wrap .tu_jing nav .a_01 {
+        display: inline-block;
+        width: 2.6rem;
+        height: 2.2rem;
+        background: url(../images/search.png); }
+      #wrap .tu_jing nav #address {
+        background-position: 0 0; }
+      #wrap .tu_jing nav #xingcheng {
+        background-position: 0 -13rem; }
+      #wrap .tu_jing nav #buyzhekou {
+        background-position: 0 -22rem; }
+      #wrap .tu_jing nav #hotel {
+        background-position: 0 -30rem; }
+      #wrap .tu_jing nav a {
+        color: white;
+        font-size: 2.2rem;
+        text-decoration: none; }
+    #wrap .tu_jing .tu_jing_div input[type=text] {
+      width: 50rem;
+      height: 4rem;
+      text-indent: 1em;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem; }
+    #wrap .tu_jing .tu_jing_div input[type=button] {
+      width: 8rem;
+      height: 4rem;
+      color: #fff;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      border: 0;
+      font-size: 1.6rem;
+      background: #27CA79; }
+    #wrap .tu_jing .tu_jing_cheng {
+      text-align: center;
+      margin-bottom: 1rem;
+      display: none; }
+      #wrap .tu_jing .tu_jing_cheng h4 {
+        font-size: 2.4rem;
+        color: #fff; }
+      #wrap .tu_jing .tu_jing_cheng button {
+        width: 14rem;
+        height: 4rem;
+        margin-left: 2rem; }
+        #wrap .tu_jing .tu_jing_cheng button .a_01 {
+          margin-right: 8rem; }
+        #wrap .tu_jing .tu_jing_cheng button .mian_fei {
+          margin-left: 3rem; }
+      #wrap .tu_jing .tu_jing_cheng .a_01 {
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url(../images/search.png); }
+      #wrap .tu_jing .tu_jing_cheng #xingcheng {
+        background-position: 0 -12.5rem; }
   #wrap .jing_1 {
     width: 100%;
     height: 15rem;
@@ -149,13 +221,31 @@ html {
           height: 18rem;
           background: rgba(72, 204, 155, 0.7);
           position: absolute;
-          display: none; }
+          display: none;
+          text-align: center; }
+          #wrap .imgs ul li #mask span {
+            color: #fff;
+            display: inline-block;
+            margin-top: 12rem; }
+        #wrap .imgs ul li #small_mask {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 50%;
+          color: #fff;
+          text-align: center;
+          line-height: 6rem;
+          position: absolute;
+          top: 5rem;
+          left: 12rem;
+          background: rgba(0, 0, 0, 0.7); }
         #wrap .imgs ul li img {
           width: 99%;
           height: 18rem;
           box-sizing: border-box; }
         #wrap .imgs ul li p {
           padding: 1rem; }
+          #wrap .imgs ul li p .data_id {
+            float: right; }
       #wrap .imgs ul li:hover #mask {
         display: block; }
   #wrap .jing_2 {
@@ -173,7 +263,7 @@ html {
   #wrap .green {
     width: 100%;
     height: 63.5rem;
-    background: linear-gradient(to bottom, rgba(0, 200, 0, 0.7) 2%, rgba(0, 255, 0, 0.5) 40%, rgba(45, 206, 216, 0) 100%); }
+    background: linear-gradient(to bottom, rgba(0, 200, 0, 0.7) 1%, rgba(0, 255, 0, 0.5) 40%, #1eceaa 100%); }
     #wrap .green h2 {
       text-align: center;
       color: white;
@@ -301,7 +391,8 @@ html {
             box-sizing: border-box;
             transition: all 2s; }
           #wrap .green_1 .divs_1 ul li p {
-            padding: 1rem; }
+            padding: 1rem;
+            font-size: 2rem; }
         #wrap .green_1 .divs_1 ul li:hover img {
           transform: scaleX(1.4); }
     #wrap .green_1 .spans_1 {

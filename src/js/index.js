@@ -45,6 +45,7 @@ for (var i = 0; i < asa.length; i++) {
 	(function (a) {
 		asa[i].onmouseover = function () {
 			asa[a].style.borderTop = '2px solid white';
+            asa[0].style.borderTop = 'none';
 		}
 		asa[i].onmouseout = function () {
 			asa[a].style.borderTop = '';
@@ -77,6 +78,26 @@ ajax.ajaxFn({
     errorFn:function(err){
     }
 });
+    $('.tu_jing nav a').eq(0).click(function(){
+         $('#address').css('backgroundPosition','0 0');
+        $('#xingcheng').css('backgroundPosition','0 -13rem');
+        $('#buyzhekou').css('backgroundPosition','0 -22rem');
+        $('.tu_jing_div').show().siblings().hide();
+    });  
+    $('.tu_jing nav a').eq(1).click(function(){
+        $('#address').css('backgroundPosition','0 -4.3rem');
+        $('#xingcheng').css('backgroundPosition','0 -8.7rem');
+        $('#buyzhekou').css('backgroundPosition','0 -22rem');
+        $('.tu_jing_cheng').show().siblings().hide();
+    });
+    $('.tu_jing nav a').eq(2).click(function(){
+        $('#buyzhekou').css('backgroundPosition','0 -17.7rem');
+        $('#address').css('backgroundPosition','0 -4.3rem');
+        $('#xingcheng').css('backgroundPosition','0 -13rem');
+        $('.tu_jing_div').show().siblings().hide();
+        $('.tu_jing_div input').eq(0).attr("placeholder","搜索目的地/折扣类型/关键词");
+    });
+    $('<input type=text  c>')    
 var lis = document.querySelectorAll('.spans span');
 var divs = document.querySelectorAll('.divs div');
 for (var i = 0; i < lis.length; i++) {
@@ -122,27 +143,27 @@ ajax.ajaxFn({
         var data = data.data.list[0];
         // console.log(data); 
         for(var i in data){
-        	var ul = $('<ul><li><div id="mask"></div><img src="'+data[i].pic+'"><p>'+data[i].title+'</p><p><span>'+data[i].cn_name+'</span><span>'+data[i].id+'</span></p></li></ul>');
+        	var ul = $('<ul><li><div id="mask"><span>'+data[i].reason+'</span></div><div id="small_mask">'+data[i].subtype+'</div><img src="'+data[i].pic+'"><p>'+data[i].title+'</p><p><span>'+data[i].cn_name+'</span><span class="data_id">'+data[i].id+'人浏览过</span></p></li></ul>');
             ul.appendTo($('.imgs'));
         }
         for(var ii in data){
-            var ul = $('<ul><li><img src="'+data[ii].pic+'"><p>'+data[ii].title+'</p><p><span>'+data[ii].cn_name+'</span><span>'+data[ii].id+'</span></p></li></ul>');
+            var ul = $('<ul><li><img src="'+data[ii].pic+'"><p>'+data[ii].title+'</p></li></ul>');
             ul.appendTo($('#sw_5'));
         }
         for(var iii in data){
-            var ul = $('<ul><li><img src="'+data[iii].pic+'"><p>'+data[iii].title+'</p><p><span>'+data[iii].cn_name+'</span><span>'+data[iii].id+'</span></p></li></ul>');
+            var ul = $('<ul><li><img src="'+data[iii].pic+'"><p>'+data[iii].title+'</p></li></ul>');
             ul.appendTo($('#sw_6'));
         }
         for(var iiii in data){
-            var ul = $('<ul><li><img src="'+data[iiii].pic+'"><p>'+data[iiii].title+'</p><p><span>'+data[iiii].cn_name+'</span><span>'+data[iiii].id+'</span></p></li></ul>');
+            var ul = $('<ul><li><img src="'+data[iiii].pic+'"><p>'+data[iiii].title+'</p></li></ul>');
             ul.appendTo($('#sw_7'));
         }
         for(var iiiii in data){
-            var ul = $('<ul><li><img src="'+data[iiiii].pic+'"><p>'+data[iiiii].title+'</p><p><span>'+data[iiiii].cn_name+'</span><span>'+data[iiiii].id+'</span></p></li></ul>');
+            var ul = $('<ul><li><img src="'+data[iiiii].pic+'"><p>'+data[iiiii].title+'</p></li></ul>');
             ul.appendTo($('#sw_8'));
         }
         for(var iiiiii in data){
-            var ul = $('<ul><li><img src="'+data[iiiiii].pic+'"><p>'+data[iiiiii].title+'</p><p><span>'+data[iiiiii].cn_name+'</span><span>'+data[iiiiii].id+'</span></p></li></ul>');
+            var ul = $('<ul><li><img src="'+data[iiiiii].pic+'"><p>'+data[iiiiii].title+'</p></li></ul>');
             ul.appendTo($('#sw_9'));
         }
     },
