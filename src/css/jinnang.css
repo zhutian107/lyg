@@ -1,0 +1,222 @@
+#jinnang {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  #jinnang header {
+    width: 100%;
+    height: 3rem;
+    background: black;
+    /*position: absolute;*/
+    /*top: 0;*/
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; }
+    #jinnang header .header_left {
+      height: 3rem;
+      flex: 3;
+      padding-top: 0.5rem;
+      margin-left: 2rem; }
+      #jinnang header .header_left img {
+        width: 4.2rem;
+        height: 2rem; }
+      #jinnang header .header_left a {
+        height: 100%;
+        padding-top: 1rem;
+        text-decoration-line: none;
+        color: white;
+        /*font-size: 1.8rem;			*/
+        margin-left: 3rem; }
+      #jinnang header .header_left .shopMark {
+        position: absolute;
+        top: -0.2rem;
+        left: 43rem;
+        width: 5rem; }
+        #jinnang header .header_left .shopMark img {
+          width: 5rem;
+          height: 1.3rem;
+          float: left; }
+        #jinnang header .header_left .shopMark .arrow {
+          width: 1rem;
+          height: 0.7rem;
+          float: right; }
+    #jinnang header .header_right {
+      flex: 1;
+      position: relative;
+      line-height: 3rem; }
+      #jinnang header .header_right span {
+        color: white;
+        margin-right: 2rem; }
+      #jinnang header .header_right .txt {
+        position: absolute;
+        left: -15rem;
+        height: 1rem;
+        top: 2.5rem;
+        display: none;
+        border-radius: 0.5rem; }
+      #jinnang header .header_right a {
+        color: white;
+        margin-right: 2rem;
+        text-decoration-line: none; }
+  #jinnang main {
+    width: 96.5rem;
+    margin-left: 10%; }
+    #jinnang main h6 {
+      line-height: 3rem; }
+    #jinnang main .main_jing {
+      width: 100%;
+      height: 7.2rem;
+      background: #E7362B; }
+      #jinnang main .main_jing .jinnang_jin {
+        font-size: 3rem; }
+      #jinnang main .main_jing span {
+        display: inline-block;
+        color: #fff;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        font-size: 1.6rem; }
+      #jinnang main .main_jing .jinnang_sou {
+        width: 27rem;
+        height: 3.5rem;
+        border-radius: 1rem;
+        margin-left: 30rem;
+        text-indent: 1em; }
+    #jinnang main .main_main1 {
+      width: 100%;
+      height: 50rem;
+      margin-top: 1rem;
+      display: flex; }
+      #jinnang main .main_main1 ul {
+        width: 20rem;
+        height: 50rem;
+        list-style: none;
+        padding: 0; }
+        #jinnang main .main_main1 ul li {
+          width: 100%;
+          line-height: 3rem;
+          margin-top: 0.2rem;
+          text-indent: 2em;
+          background: #F6F6F6; }
+        #jinnang main .main_main1 ul #qiongyou_app {
+          width: 100%;
+          height: 18rem; }
+          #jinnang main .main_main1 ul #qiongyou_app p {
+            width: 100%;
+            line-height: 4rem;
+            text-indent: 0;
+            text-align: center;
+            font-size: 1.8rem; }
+          #jinnang main .main_main1 ul #qiongyou_app img {
+            width: 11.5rem;
+            height: 11.5rem;
+            margin-left: 4rem; }
+      #jinnang main .main_main1 #main_swiper {
+        position: relative;
+        width: 75rem;
+        height: 50rem;
+        background: #eee;
+        box-sizing: border-box;
+        margin-left: 2rem; }
+        #jinnang main .main_main1 #main_swiper img {
+          width: 75rem;
+          height: 50rem; }
+        #jinnang main .main_main1 #main_swiper .swiper-pagination {
+          margin-left: 30rem; }
+          #jinnang main .main_main1 #main_swiper .swiper-pagination span {
+            background: #fff; }
+    #jinnang main p {
+      line-height: 3rem; }
+    #jinnang main .main_bianji {
+      width: 100%;
+      height: 24.5rem;
+      list-style: none;
+      background: #F6F6F6;
+      padding: 0;
+      display: flex; }
+      #jinnang main .main_bianji li:nth-child(1) {
+        border-left: none; }
+      #jinnang main .main_bianji li {
+        padding: 2rem;
+        width: 16rem;
+        height: 24rem;
+        border-left: 0.05rem dashed;
+        text-align: center; }
+        #jinnang main .main_bianji li img {
+          width: 10.5rem;
+          height: 17.5rem; }
+        #jinnang main .main_bianji li p {
+          line-height: 1.5rem;
+          margin: 0; }
+        #jinnang main .main_bianji li button {
+          width: 8rem;
+          height: 3rem;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          padding: 0; }
+    #jinnang main .main_main2 {
+      width: 100%;
+      display: flex; }
+      #jinnang main .main_main2 p {
+        width: 100%; }
+        #jinnang main .main_main2 p img {
+          width: 100%;
+          height: 15rem; }
+      #jinnang main .main_main2 .main_xiazai {
+        width: 27rem;
+        height: 50rem;
+        list-style: none;
+        padding: 0; }
+        #jinnang main .main_main2 .main_xiazai li {
+          width: 100%;
+          height: 3.5rem; }
+          #jinnang main .main_main2 .main_xiazai li img {
+            width: 3rem;
+            height: 3rem; }
+      #jinnang main .main_main2 .main_addressname {
+        width: 66.5rem;
+        margin-left: 3rem; }
+        #jinnang main .main_main2 .main_addressname .main_gengxin {
+          width: 100%;
+          list-style: none;
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; }
+          #jinnang main .main_main2 .main_addressname .main_gengxin li {
+            width: 11rem;
+            height: 24rem;
+            margin-right: 2.3rem;
+            border-bottom: 0.05rem dashed; }
+            #jinnang main .main_main2 .main_addressname .main_gengxin li #jinnang_mask {
+              width: 11rem;
+              height: 16rem;
+              background: rgba(0, 0, 0, 0.7);
+              position: absolute;
+              display: none; }
+            #jinnang main .main_main2 .main_addressname .main_gengxin li h6 {
+              line-height: 1rem;
+              padding: 0; }
+            #jinnang main .main_main2 .main_addressname .main_gengxin li p {
+              line-height: 1rem; }
+            #jinnang main .main_main2 .main_addressname .main_gengxin li img {
+              width: 100%;
+              height: 16rem; }
+          #jinnang main .main_main2 .main_addressname .main_gengxin li:hover #jinnang_mask {
+            display: block; }
+    #jinnang main .main_ye {
+      width: 20rem;
+      height: 2rem;
+      margin-left: 75rem; }
+      #jinnang main .main_ye a {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        color: black; }
+      #jinnang main .main_ye a:hover {
+        background: lightgreen;
+        text-align: center;
+        text-decoration: none; }
+  #jinnang footer {
+    width: 100%;
+    height: 10rem;
+    border-top: 0.5rem solid green;
+    background: #323232; }
