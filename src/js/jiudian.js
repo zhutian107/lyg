@@ -8,7 +8,7 @@ ajax.ajaxFn({
 		var data = JSON.parse(data);
 		console.log(data);
        for(var i in data){
-       	   var li = $('<li><img src="'+data[i].img+'" alt=""><div class="name_li_div"><h2>'+data[i].name+'</h2><p>'+data[i].num+'</p></div></li>');
+       	   var li = $('<li><a href="jiudian_yuding.html"><img src="'+data[i].img+'" alt=""></a><div class="name_li_div"><h2>'+data[i].name+'</h2><p>'+data[i].num+'</p></div></li>');
        	   li.appendTo($('.main_dangji_name'));
        }
 	},
