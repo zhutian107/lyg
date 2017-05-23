@@ -1,0 +1,1172 @@
+ cdn    在线选则插件
+
+
+ 在cmd上查看ip地址：ipconfig
+ 
+ cmd 知识运用：
+  http://www.runoob.com     nodejs的知识网
+
+    bootstrap  推特(twitter)公司出的
+    angular    google(谷歌)出的
+    react      facebook
+    vue        个人开发者-->尤大大
+ cmd 常用命令行：
+    node -v 检测nodejs是否存在 
+    windows 切盘 d:
+    选中文件夹 cd 将文件夹拖过来(绝对路劲选中)， cd 子文件夹名称(相对路劲选中)
+    显示当前文件夹的目录结构 dir(windows)， ls(mac)
+    返回上级目录 cd ..
+    创建问价夹  mkdir 文件夹名称 
+    清空cmd的窗口 cls(windows), clear(mac)
+    新建文件 cd .> 文件名(windows)
+    测试公司的服务器是否挂掉 ping 服务器的ip
+
+sass的知识点：
+    //sass 文件里面有中文 第一行加 @charset “utf-8”;
+    //sass 文件路径有中文 修改ruby配置文件的filesystem.rb 里面的第87行，name.encode('utf-8','gbk').index()
+   
+    @import 的坑， 引入css的时候，需要使用相对于生成的css文件的相对路劲
+
+    less 编译：
+    1，使用命令行编译，但是less没有sass这种观察模式
+    2，使用gulp，grunt第三方工具的插件编译
+    3，使用自带的less.js 实现直接引入到html，并且可以实现边写边看的模式
+   
+   编译sass或者less时可以使用 
+    @mainColor:red;  
+    @mainWidth:100px;
+    @importent.url()
+    .radius(@val){
+       border-radius:@val;
+       -webkit-border-radius:@val;
+       -o-border-radius:@val;
+       -moz-border-radius:@val;
+       -ms-border-radius:@val;
+    }
+    只要是数值的属性就可以用到transition来过渡
+    .transitions(@time,@type){
+        transition:@time @type;
+       -webkit-border-radius:@time @type;
+       -o-border-radius:@time @type;
+       -moz-border-radius:@time @type;
+       -ms-border-radius:@time @type;
+    }
+    
+    div{
+        color:@mainColor;
+        width:(22px / @mainWidth)*100%;
+        .radius(50px);
+        .transitions(2s,all)
+    }
+
+    安装cnpm:
+         npm install -g cnpm --registry=https://registry.npm.taobao.org 把这行代码复制到cmd中就安装了淘宝镜像
+     CRL+R打开cmd
+     CRL+C  终止操作
+     d:   打开d盘
+     cd+空格|+文件名称--》打开文件夹
+     md+空格  创建名字a的文件夹
+     ipconfig 查看
+     cd+空格a/b  打开a文件下的b
+     cd.. 关闭文件夹  回到上一级文件夹     
+     mkdir+空格+md+空格+a/b/c  创建a下边的b下边的c
+     dir 查看  文件夹下的所有
+     cls 清空上面的东西
+     cd/退到根目录
+     rd+空格+文件名  删除       rd D:/a
+     del+空格，删除文件  rd 是删除文件夹的
+     exit  关闭窗口
+   gem -v  检测ruby是否存在
+   gem install sass 安装sass包
+   node -v 检测nodejs是否存在
+   cnmp install less -g  安装less
+
+   --watch sass/01.scss:css/01.css   这个是监听写法(--watch)
+   --watch sass/01.scss:css/01.css --style expanded 设置嵌套了又分离的写法
+   --watch sass/01.scss:css/01.css --style compact  设置每个在一行写法
+   --watch sass/01.scss:css/01.css --style compressed  设置全部在一行写法
+   --watch sass/01.scss:css/01.css --style nested  设置还原嵌套写法
+gulp的知识安装
+     cnmp install gulp -g --->全局安装
+     第一步:npm init            初始化   
+     第二步:
+     cnpm install gulp --save-dev           下载gulp压缩包
+     cnpm install gulp-uglify --save-dev  下载gulp-uglify压缩包
+     cnpm install gulp-concat --save-dev  下载gulp-concat合并包
+     gulp +名字   启动执行
+     Gulp的核心API只有4个：src、dest、task、watch
+sass操作步骤：
+
+    gem -v  检测ruby是否存在
+    gem install sass --save-dev  安装sass    
+    --watch sass/01.scss:css/01.css监听
+nodejs知识
+    常用指令：
+       npm init 初始化项目，生成package.json文件
+       npm init -y 快速生成package.json 但是项目文件夹的名称有要求
+       npm search 模块名 搜索某一个模块是否在npm的仓库里面存在
+       npm install 模块名 下载模块 后面可以跟参数 -g 表示全局，--save-dev 表示开发环境下
+       npm update 模块名 更新模块
+       npm ls 显示当前node_moudules 文件夹里面的所有包
+       npm list 模块名 显示当前node_moudules模块里面的版本
+       npn uninstall 模块名 卸载模块 
+ url.parse对象里面的三个用信息：      
+       pathname 返回路径（相对路径），query返回请求的参数，search返回？后面的字符串
+路由:
+  根据路径的不同，显示不同的页面效果(前端)
+  根据路劲的不同，处理不同业务，返回不同的结果给前端
+
+
+git知识：
+    git config --global user.name 'zhutian107'
+    git config --global user.email '1239742815@qq.com'
+    clear 清除屏幕
+    git init  使用git初始化仓库     
+    pwd 查看当前所在路径
+    ls 查看当前目录下所有的文件
+    mkdir 文件夹名字  创建文件夹
+    ls -ah 查看当前目录所有文件(包含隐藏文件)
+    .git 用来记录项目版本的，不要随意修改
+    touch readme.txt   创建一个文本
+
+        git diff   查看文件修改的内容，但是不可见新建文件        
+        git add 文件名         文件名是你需要提交的文件
+        git add . 提交所有在工作区的文件到暂存区
+        git commit -m '提交的信息'   写的注释，容易查找 
+        git status 查看git仓库状态     查看工作区和暂存区是否有需要提交的文件 
+        红色字体代表文件在工作区，绿色代表我们文件在暂存区  
+        nothing commit  文件已经提交到仓库，已经没有要提交的文件了
+        git log  查看提交日志
+    当项目出现问题解决不了，使用回滚：
+        git reset --hard 版本号,   直接回滚到想要回到的版本页 
+        git reset --hard HEAD^     如果相会退到上上一个版本需要加两个^，以此类推
+        git reset --hard 版本号
+        git reflog 查看commit id值
+
+   touch a.txt   创建文件
+   rm a.txt  删除文件-->存到库里-->git checkout -- a.txt  找回a文件
+   git checkout 
+   多人协作：
+       git push -u origin master   把代码提交到远程仓库的主分支
+       git pull 更新本地仓库的内容  从远程仓库拉取最新内容
+       提交代码，先拉再推  git pull
+       .gitignore   上传远程仓库，忽略的文件
+   分支系统：
+       git branch 查看所有本地分支
+       git branch 分支名    创建分支
+       git checkout 分支名 切换到分支
+       git checkout -b 分支名   创建并且切换到一个分支 
+
+       本地分支的作用，其实就是为了备份一下，防止本地开发过程中出现不可逆转的问题；
+       每天开发前，先创建一个分支，切换到该子分支上面进行开发，当一天的开发完成之后，将该子分支里面的内容合并到主分支；再进行提交代码
+       git checkout -b zouhao
+       开发代码，开发测试没问题
+       git checkout master
+       git merge zouhao
+       git branch -d zouhao
+       git pull 
+       git push  
+github 知识;
+      ssh-keygen -t rsa -C "你的邮箱";
+
+
+angular知识：
+     ECMA解释：
+         E：指的是element<标签>
+         C：指的是class  
+         M: 指的是注释
+         A: 指的是attrbutte属性
+**********************************
+溢出隐藏后变成省略号...
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+*************************************
+
+
+
+
+
+
+
+
+
+
+2.web存储  localStorage  
+    cookie大小被限制在4KB，一个域名只能最多有50个cookie;
+    webStorage大小在2.5~5M之间
+    限制存储的时间必须通过cookie；
+    webStorage:包括localStorage和sessionStorage
+       localStorage 本地存储，除非手动清除  
+    setItem()和getItem()和removeItem()和clear()方法。
+    //存储
+        localStorage.setItem('username','小宝');
+        localStorage.setItem('age',18);
+        localStorage.address="河北石家庄";
+        localStorage['class']="1611A";
+        
+        
+        sessionStorage临时存储，浏览器关闭即使销毁
+        sessionStorage.setItem('tel',15226596068);
+        
+    //读取
+        console.log(localStorage.getItem('age'));
+        console.log(localStorage.getItem('username'));
+        console.log(localStorage.class);
+        console.log(localStorage['address']);
+     
+    //删除
+        var btn=document.querySelector('.btn');
+        btn.onclick=function(){
+          localStorage.removeItem('age');//删除键值对
+          localStorage.clear()//清空所有数值
+        }
+2. 
+    *{ padding:0; margin:0;}
+    body{background:#fff; font-size:12px; font-family:"宋体"; }
+    ul{ list-style:none;}
+    a{text-decoration:none;}
+    img{ border:none;}
+    
+ 背景设置大小：background-size:x 
+
+    function randFn(min,max){
+       return parseInt(Math.random()*(max-min+1)+min);
+    }
+HTML知识点：
+        ul>li{我是li$}*5
+        
+        链接：  href="链接目标地址"
+                title=“鼠标悬停文本内容”
+                target="_blank" 
+                          在新窗口打开
+                target="_self"
+                           默认，在自身窗口打开
+        文本框：<input  type="text" >
+        密码框:<input  type="password"/> 
+        单选框：<input  type="radio"  name="sex"  checked="checked"/>
+        复选框：<input  type="checkbox"  checked="checked"  /> 
+        文件域：<input  type="file"/> 
+        图像域：<input  type="image"  src="图像地址" />
+        提交按钮：<input  type="submit"  value="显示的值"/>
+        重置按钮：<input  type="reset"  value="显示的值"/> 
+        下拉菜单：<select>
+                     <option  selected="selected">选项1</option>
+                     <option>选项2</option>
+                  </select>
+        文本域：<textarea  rows="行数"  cols="列数"  name=""> </textarea>
+         placeholder 属性：<input  type="text"   placeholder=” ”/>      
+
+        路径问题：
+            1.文档和图片在同一目录下， 直接写图片属性即可：  logo.png
+            2.文档和图片不在同一目录下，图片在另一文件夹下: img/logo.png
+            3.文档和图片不在同一目录下，问档和图片各在一个独立的文件夹下：../img/logo.png
+引用问题：
+    css引用：<link rel="stylesheet" href="css/style.css">
+    css样式：<style type="text/css"></style>
+    jQ应用包写法：
+        要写在<head>标签里<script type="text/javascript" src="../jquery-3.1.1.js"></script>
+    js链接写法：
+        必须写在jQ包下面<script type="text/javascript" src="../js/main.js"></script>
+5.背景图切换：
+
+   var arr = ["url(img/01.jpg)","url(img/02.jpg)","url(img/03.jpg)","url(img/04.jpg)"];
+          var temp = 0;
+          you.onclick = function(){
+           	temp++;
+           	if(temp>3){
+           		temp=0;
+           	}box.style.background=arr[temp]
+           }
+            zuo.onclick = function(){
+           	temp--;
+           	if(temp<0){
+           		temp=3;
+            }box.style.background=arr[temp]
+           }    
+5.动态获取当前位置：(人物行走)
+
+   offsetLeft：水平位置向左走：person.style.left=person.offsetLeft-5+"px";
+   offsetLeft：水平位置向右走：person.style.top=person.offsetLeft+5+"px";
+   offsetTop：垂直位置向上走：person.style.top=person.offsetTop-5+"px";
+   offsetTop：垂直位置向下走：person.style.top=person.offsetTop+5+"px";
+
+6.动态获取当前宽度和高度（进度条）：
+
+   offsetWidth:当前的宽度；
+   offsetHeight:当前的高度；
+
+8.如何阻止事件冒泡和默认事
+
+  事件冒泡：stopPropagation ();    event.canceBubble =true;
+  默认事：ev.preventDefault;       return false;
+
+9.鼠标事件：
+   
+  oncontextmenu:右击；   onmouseover:滑过；onmouseout:离开； 
+  onmousedown:按下；     onmouseup:抬起；  onclick:单击；   change(fn)表单改变值时触发
+  dblclick:双击；
+
+10.键盘事件：
+   
+  onkeydown:按下任意键触发；  onkeypress:按下字符触发； onkeyup:送开键触发；
+
+11.HTML事件；
+  
+  onfocus:获得焦点；  onblur:失去焦点； oninput:当输入内容时触发；
+  onchange:当输入框内容修改时触发；  onreset:重置按钮在元素上触发；
+
+12.在计算机中非0即真
+   在编程中数字0代表false
+
+  
+   短路现象:
+   <1>.逻辑或||-->当第一个为真时，后面的将不会执行
+     var a=2||8;
+     alert(a)  //2   真
+
+    var b=0||8;假
+    alert(b);  //8   
+   <2>.逻辑与&&-->当第一个为假时，后面的将不会执行
+     var c=0 && 1;
+     alert(c);   //0
+  <3>var a=100;
+     var b=200;
+     var c=300;
+     var num=(a>b)||(c=500);
+     alert(c)   //500;
+
+     var num=(a>b)&&(c=500);
+     alert(c)   //300
+
+     <4>.var arr1=[1,2,3];
+         var arr2=[4,5,6];
+         concat:数组拼接
+         var arr3=arr1.concat(arr2);  //[1,2,3,4,5,6]
+
+    <5>.var a=10;
+    function num(){
+        console.log(a);//undefined   //变量提升
+        var a=1;
+    }
+  *******************************************************
+DOM 节点:
+        childNodes:          所有子节点
+        children:  :         所有事标签类型的子节点
+        nextSibling:         下一个兄弟节点
+        previousSibling:     上一个兄弟
+        parentNode:          父节点
+        firstChild:          第一个子节点
+        lastChild:           最后一个子节点
+        createElement('')：  创建新元素
+        createTextNode('')： 创建文本节点
+        appendChild(''):     向末尾插入节点 
+        insertBefore('a','b')向b之前插入节点a
+        replaceChild(new,old):替换节点
+        removeChild('')      移除父节点的某个子节点
+        查找方法：
+            document.getElementById('');
+            document.getElementsByTsagName('')
+        复制节点：
+            cloneNode(布尔值);true深复制 、flase浅复制
+        窗口滚动条的位置：scrollTop
+        宽度：document.documentElement.clientWidth
+        高度：document.documentElement.clientHeight
+              document.body.clientWidth
+              document.body.clientHeight
+
+        scrollTop=0;返回顶部
+
+
+
+
+
+
+**********************************************************
+面向对象：
+    变量函数：
+        function createObject(name,age){
+          var box=new Object();
+          box.name=name;
+            box.age=age;
+            box.run=function(){
+            return box.name+box.age;
+            }
+            return box;
+        }
+        var box1=new createObject("laowang",18);
+        var box2=new createObject("laozhang",20);
+        alert(box1.name);
+        alert(box2.name);
+    构造函数：
+        function CreateObject(name,age){
+          this.name=name;
+          this.age=age;
+          this.run=function(){
+          return this.name+this.age;
+          }
+        }
+        var box1=new CreateObject("laowang",18);
+        var box2=new CreateObject("laozhang",20);
+        alert(box1.name);
+        alert(box2.name);
+    排序
+        var test=[2,1,4,7];
+        alert(test.sort());//1247
+
+        function Box(){}
+        Box.prototype={//原型添加
+          name:"liu",
+          age:18,
+          family:['2','5','9'],
+          run:function(){
+          return this.name+this.age;
+          }
+       }
+        var box1=new Box();
+        alert(box1.name);
+  继承：
+
+    原型链继承
+      function Box(){
+        this.name='zhang';
+      }
+      function Desk(){
+        this.age=10;
+      }
+      function Table(){
+        this.love='girl';
+      }
+      Desk.prototype=new Box();
+      Table.prototype=new Desk();
+      var desk=new Desk();
+      var table=new Table();
+      alert(desk.name);
+      alert(table.age);
+
+    call与apply冒充继承
+      function Box(name){
+        this.name=name;
+      }
+      function Desk(name){
+        Box.call(this,name);
+        //Box.apply(this,[name]);
+      }
+      var desk=new Desk('wang');
+      alert(desk.name);
+**********************************************************
+Ajax知识点:
+      Ajax 的请求对象：
+         1.var xhr=null;
+
+      兼容：if(window.XMLHttpRequest){
+               ajax=new XMLHttpRequest();
+           }else{
+              ajax=new ActiveXObject("Microsoft.XMLHTTP");
+           }          
+      2.向服务器请求数据
+        ajax.open(请求方式，服务器地址，是否异步)；
+      3.发送请求
+        ajax.send();   
+      4.检测状态
+        ajax.onreadystatechange=function(){
+            if(ajax.readyState==4){        //readyState状态码
+                if(ajax.status>=200 && ajax.status<=206 || ajax.status==304){
+                    JSON.parse(ajax.responseText)   //不是JSON转化JSON格式的写法
+                    ajax.responseText   //直接使用的方法
+                }
+             }else{
+                 console.log('请求失败')
+             }
+         }
+    
+**********************************************************
+      CSS属性添加：box-sizing:border-box 把边框包含在元素内
+      
+      JS:在行间显示属性：
+          设置-->div.setAttribute('index',100);
+          获取-->div.getAttribute('index');
+      JS:在非行间显示属性：
+          设置-->div.index=100;
+          获取-->div.index;
+      JQ:在行间显示属性：
+          设置-->div.attr('index',100);
+          获取-->div.attr('index');
+      JQ:在非行间显示属性：
+          设置-->div.index=100;
+          获取-->div.index;
+      JS写法：
+          移除父级的父级：a.parentNode.parentNode.remove();
+      JQ写法:
+          移除父级的父级：$('a').parent().parent().remove();
+  JSON:
+      JSON.parse(str)将Json字符串转换为Json对象
+      JSON.stringify(obj)将Json对象转换为Json字符串
+***************************************************    
+jQurey知识点总结 :
+    改变js写法为jQ写法的添加get(0)就可以了    $('div').get(0).style.display="none"
+     
+    如果内容为空时阻止创建插入：
+         $('btn').click(function(){
+             if ($('input').val()=="") {
+                 return false;   //跳出事件不再执行下面的语句
+              }
+         })
+
+    禁止提交表单跳转 
+
+          $('form').submit(function(e){ 
+               e.preventDefault(); 
+          });
+
+    在form里的按钮如果input里面的值是空的就阻止它提交刷新页面
+             $('form').submit(function(e){
+              if ($('input').val()=="") {
+                 e.preventDefault();
+              }
+            })
+    窗口的大小宽度
+              jQ：$(document.body).width(); 
+                  $(document.body).get(0).clientWidth;
+              js:document.documentElement.clientWidth;
+   打开时在窗口的正中央：
+            left:$(document).width()/2-$(".motai").width()/2+"px",
+            top:$(document).height()/2-$(".motai").height()/2+"px",
+
+    群组选择器：
+        $('ul,div,p')  后代选择器：$('ul li a')
+    通配符选择器：
+        例:$('div *')   $('*')   
+    子选择器：
+        例：$('div').children('p')      $('div').find('p')//找到p
+        $('div').next('p') 下一个p元素       $('div').nextAll('p')
+        $('div').prev('p')上一个p元素 
+   
+    属性选择器：
+        $('a[title]')、 $('a[tilte=num]') 、 $('a[tilte^=num]')、$('a[tilte$=num]')、$('a[tilte!=num]')、$('a[tilte~=num]')
+    基本过滤器：
+        使用冒号（:）开头
+        $('li:first')、 $('li:last')、 $('li:even')、 $('li:odd')、 $('li:eq(0)')、 $('li:not(.red)')、 $('li:animated')、 $('li:gt(2)')、 $('li:lt(3)')
+    注意的项不一样：
+        $('#box li:first').css() / $('#box li').first().css()  
+        $('#box li:last').css() / $('#box li').last().css() 
+    
+    内容过滤器：(文本)
+        $('div:empty')         不包含空的元素
+        $('div:has(.box)')     选取含有class是box项
+        $('div:contains(abc)') 选含有abc项
+        $('div:parent')        选取含有子元素项/非空
+    注意的项不一样：
+        $('div:parent') 与 $('div').parent()指div的父元素   
+        $('div').parents()指div的父元素及祖先元素
+        $('li').parentUntil('div')指遇到div停
+    
+    可见性过滤器：
+        $('p:hidden')   所有不可见p元素
+        $('p:visible')  所有可见p元素
+
+    子元素过滤器：
+        $("li:first-child")    获取li第一个子元素
+        $("li:last-child")     获取li最后一个子元素
+        $("li:only-child")     获取只有一个子元素的元素
+        $('li:nth-child(odd)') 获取li奇数元素
+        $('li:nth-child(even)') 获取li偶数元素
+
+    设置元素的内容:
+      html()、text() 、val()
+        $('div').html()    获取html内容
+        $('div').text()    获取文本内容
+        $('input').val()   获取表单内容
+    设置元素的属性：
+        $('div').attr('title')   获取属性的属性值
+        $('div').attr('title','ming')   设置属性的属性及值
+        $('div').attr('title',function(index,value){
+            return  value+(index+1)   获取函数返回值
+        })
+        $('div').removeAttr('title')  删除属性
+    注意：
+        html(function(){})、val(function(){})、text(function(){})
+    
+    元素样式：
+        $('div').css({name:abc,age:18})
+        $('div').addClass(class类)  给div添加一个class类
+        $('div').removeClass(class) 删除它
+        $('div').toggleClass(class) 切换默认样式和指定样式
+
+    $.each()方法解决遍历：
+        $('div').each(function(index,element){//element为元素DOM
+              alert(index+element)
+        })
+    设置width的值：
+        $('div').css('width',function(index,value){
+             return  parseInt(value+1)+'px';
+        })
+
+    toggleClass和hasClass使用:  
+
+        $('.div1').click(function(){
+          $(this).toggleClass('red');
+            if ($(this).hasClass("red")) {
+              $(this).removeClass('blue')
+              $(this).addClass('red');
+            }else{
+              $(this).removeClass('red');
+              $(this).addClass('blue')
+          }
+        })
+
+    css方法：
+        $('div').width()       获取长度返回number值
+        $('div').width(200)    获取长度返回number值默认加px
+        $('div').width(function(index,value){
+            return  value   直接计算不用考虑类型
+        })
+        $('div').height()      
+        $('div').height(200)   
+        $('div').height(function(index,value){
+            return  value   
+        })
+    元素偏移方法：
+        $('div').offset().left  相对于视口的偏移
+        $('div').offset().top
+        $('div').position().left  相对于父元素的偏移
+        $('div').position().top
+        $(window).scrollTop()   获取当前滚动条的位置  
+        $(window).scrollTop(200)   设置当前滚动条的位置  
+
+  DOM节点操作：
+    内部插入节点的方法：
+        创建节点：var box=$('<div>我是节点</div>');
+        插入节点：$('body').append(box);
+        移入节点：$('p').appendTo('div')
+        插到前面：$('div').prepend($('span'))
+        移到前面：$('span').prependTo('div');
+    外部插入节点的方法：
+        向同级后面插入：$('div').after($('p'))   
+        向同级前面插入：$('div').before($('p'))   
+        移到同级后面：$('span').insertAfter('div');
+        移到同级前面：$('span').insertBefore('div'); 
+    包裹节点：
+        $('div').wrap(<p>123</p>)  在每一个div外层包裹一层p    
+        $('div').wrapAll(<p></p>)  把所有div看做一个整体在外包一层
+      注意：
+        .wrap()和.wrapAll()的区别在前者把每个元素当成一个独立体，分别包含一层外层；后者将所有元素作为一个整体作为一个独立体，只包含一层外层。
+        $('div').clone(true)参数可以为空，为空时：只复制了它的内容和元素没有行为  ，有true表示复制了事件行为
+        $('div').remove()   //删除div
+        $('div').remove('#box')   //只删除div中id是box的div
+        $('div').detach()    //保留事件行为的删除
+        $('div').empty()     //清空节点  删除点节点里的内容
+        $('div').replaceWith('<span>节点</span>');//将div替换成span元素
+    表单选择器：
+        $('input').val()  默认是第一个元素
+        $('input').eq(1).val()  第二个元素
+        :input  获取所有的input元素
+        :text  获取所有的text元素
+    表单过滤器：
+        :enabled 选取所有可用的元素    
+        :disabled 选取所有不可用的元素    
+        :checked 选取被选中的的元素    
+        ::selected 选取被选中的的元素，下拉列表 
+    基础事件：
+        $('div').bind('click',function(){})  点击事件
+        $('div').unbind('click')  删除点击事件
+    事件绑定方法：
+        $('div').on('mouseover mouseout',function(){})
+        $('div').on('mouseup',function(){})
+        $('div').on('mousedown',function(){retrun  value;})
+        $('div').on('keydown',function(e){alert(e.keyCode)})
+        $('div').on('keyup',function(){})
+        $('div').on('keypress',function(){charCode})
+        $('txt').focus(function(){})     .focusin()
+        $('txt').blur(function(){})      .focusout()
+        $('div').hover(fn,fn)
+    事件对象：
+        获取触发事件名:event.type      
+            $('input').click(function(e){alert(e.type)})
+        获取绑定的DOM元素:event.target    
+            $('input').click(function(e){alert(e.target)})
+        获取额外数据:event.data    
+            $('input').bind('click','123',function(e){alert(e.data)}
+        获取移入到div之前的那个DOM元素:e.relatedTarget
+            $('div').mouseover(function(){
+                alert(e.relatedTarget); 
+            })
+        获取绑定的那个DOM元素相当this    e.currentTarget
+            $('div').click(function(e){
+                alert(e.currentTarget);
+            })
+        获取上一次事件的返回值：e.result
+            $('div').click(function(e){return 123})          
+            $('div').click(function(e){alert(e.result)})
+        获取当前的时间戳 :e.timeStamp
+            $('div').click(function(e){alert(e.timeStamp)})
+        获取鼠标的左中右键: e.which
+            $('div').mousedown(function(e){ alert(e.which)})
+        获取键盘按键: e.which
+            $('div').keyup(function(e){ alert(e.which)})
+        获取是否按下了 ctrl 键，meta 键不存在，导致无法使用 ：
+            $('input').click(function(e){alert(e.ctrlKey)})
+        获取触发元素鼠标当前的位置: 
+            $(document).click(function(e){alert(e.screenY+','+e.pageY+',' +e.clientY)})
+    冒泡和默认事件：
+        触发的顺序是从小范围到大范围。 这就是所谓的冒泡现象，一层一层往上。
+        阻止冒泡事件：event.stopPropagation();  /  return false;
+        阻止默认事件：e.preventDefault();  
+    高级事件：
+        模拟用户点击事件：trigger('type')
+            $('div').click(function(){}).trigger('click')
+        传参模拟事件：模拟时必须加中括号
+            $('div').click(function(e,data1,data2){
+               alert(data1.a+data2[1]);
+            }).trigger('click',[{1:1,2:2},[1,2]])
+        trigger()和triggerHandler 的区别：
+            $('form').trigger('submit'); 模拟用户执行提交，并跳转到执行页面 
+            $('form').triggerHandler('submit'); 模拟用户执行提交，并阻止的默认行为   返回的是布尔值
+        one()方法：仅仅触发一次，省去了开始结束
+            $('.button').one('click',function(){alert(仅触发一次)})
+   动画效果：
+        显示:show();隐藏：hide();
+             slow-->600毫秒,  normal-->400毫秒,   fast-->200毫秒
+             $('div').show(1000);    $('div').hide(1000);
+             show(1000,function(){})           hide(1000,function(){})
+        回调显示函数：
+             $('btn').click(function(){
+                $('div').first().show(1000,function test(){
+                    $('div').next().show(1000,test);
+                })
+             })
+        循环隐藏列队函数：
+             $('btn').click(function(){
+                $('div').last().hide(1000,function test(){
+                   $(this).prev().hide(1000,arguments.callee);
+                })
+             })
+        切换按钮：toggle()
+            $('btn').click(function(){
+                $(this).toggle(1000);
+            })
+        向上卷动和向下滑动：slideUp()和slideDown();
+            $('btn').click(function(){
+               $('div').slideUp(1000)；/   slideDown(1000)
+            })
+        切换按钮：slideToggle()         用法同上
+        淡入和淡出:fadeIn()和fadeOut()  用法同上
+        切换:fadeToggle();              用法同上
+        淡入淡出和显示隐藏的效果一样。
+        过渡透明的效果：fadeTo(1000,0.5)
+    自定义动画：animate();
+        例：$('btn').click(function(){
+              $('div').animate({
+                 left:200px,    //需要定位
+                 top:100px,
+                 width:300px,
+                 fontSize:50px,
+                 opacity:0.5
+              })//这里可以加时间和fn函数回调 或者 swing(缓动，默认)和linear(匀速)
+            })
+        列队动画写法：
+             $('btn').click(function(){
+                 $('div').animate({left:'100px'})
+                 $('div').animate({top:'100px'})
+                 $('div').animate({width:'300px'})
+             })
+          递减递增：
+            $('.animate').click(function(){ 
+                $('#box').animate({ 
+                     'left':'+=100px', 
+                });
+            });
+
+          动画方法可以连缀一次列队，而css()方法不是动画方法不可以列队连缀，可以用queue()方法模拟动画方法：
+              $('div').slideUp().slideDown().queue(function(s){
+                  $(this).css('banckground','red');
+                  s();
+              }).hide(1000)---->queue()函数想再后跟连缀必须需要传个参数
+          清除动画的列队：
+               $('div').slideUp(1000.function(){
+                   $(this).clearQueue();
+               })
+          强制停止运行中的：$('btn').click(function(){
+                         $('div').stop();
+                  }) 
+          停止参数的：$('btn').click(function(){
+                          $('div').stop(true,true)
+                     })第一个参数表示是否取消列队动画，默认为 false。如果参数为 true，当有列队动 画的时候，会取消后面的列队动画。第二参数表示是否到达当前动画结尾，默认为 false。 如果参数为 true，则停止后立即到达末尾处。
+          delay()方法：
+              $('btn').click(function(){
+                  $('div').delay(1000).animate({
+                      left:'100px'
+                  })
+              })
+      hover符合属性：
+          $('div').hover(function(){},function(){})
+  jQ封装插件：
+     jQuery插件开发的步骤：
+          1.使用闭包(function($){})(jQuery)
+            a)、避免全局依赖   b)、避免第三方破坏 c)、兼容jQuery操作符"$"和“jQuery”
+          2.扩展 
+          3.选择器a)、尽量用ID选择器  b)、指明对象例：$('div .jq')
+
+     在引用的js文件中写入：
+          (function($){
+              $.fn.extend=function(){
+                  自己插入的代码
+              }              
+          })(jQuery)
+
+      全选框:
+         $("#checkbox").click(function(){
+           if($(this).prop("checked")){
+                 $(".box").prop("checked",true);
+           }
+           else{
+               $(".box").prop("checked",false);
+           }
+         })
+
+ 
+
+
+
+
+
+
+
+
+***************************************************************
+
+
+
+
+
+
+
+
+
+CSS3知识点总结：
+      css属性：
+        相邻选择器：p+p p~p [title]  [title^=a]  [title$=a]  [title*=a]
+        目标伪类：:target{}  锚点使用法
+        状态伪类：input:disabled  已经有值了不能输入了，禁用的功能
+                例子:<input type="text" disabled="disabled" value="333">
+                input:enabled   匹配已启用的元素上          
+                input:checked   只用于单选和复选框上，已被选中的 
+        结构伪类p:first-child  匹配属于其父元素的首个子元素
+                p:last-child   匹配属于其父元素的最后一个子元素
+                p:only-child   匹配属于其父元素的唯一个子元素
+                p:empty        匹配没有子元素的元素
+        否定伪类:p:not(’标签‘)
+        p:first-letter{}   p的首字母
+        p:first-line{}     p的首行
+        div::selection{}   可以使用鼠标拖拽的方式直接选中查看效果
+      内容生成：p:before{content:url(a.jpg)} p前插入一个图片  
+                p:after{content:文本}  p后插入一个图片
+      阴影：p{text-shadow: length length length color}
+            前面三个length分别指阴影离开文字的横向距离、阴影离开文字的纵向距离和阴影的模糊半径，color指阴影的颜色。 最少写2个参数可以是负数
+      2D效果转换：
+            transform:rotate(50deg) 旋转50度角
+            transform-origin:数值/百分比/关键字  以右上角为原点转
+                            一个值：表示所有轴的位置
+                            两个值：表示 X 轴和 Y 轴
+                            三个值：表示 X 轴、Y 轴和 Z 轴
+                例子：div{transform-origin:right top} 
+                      div{transform:rotate(45deg) scale(2)}
+            位移：translate(x,y)从其当前位置移动移动到 x 坐标和 y 坐标位置参数
+                  translateX(x) translateY(y) 
+                  例如：translate(50px,50px)表示水平方向上移动50px,垂直方向上移动50px
+      3D效果：translate(x,y,z)
+             translateX(a) translateY(a)  translateZ(a)
+          如何在3D空间中呈现：           
+              1.设置到当前的元素的父元素里:transform-style:preserve-3d;   
+              2.设置到当前的元素的父元素里：perspective:1000px;(长度值) 
+            例子：<div><img src="img.png"></div>
+                  div{perspective:1000px;transform-style:preserve-3d;} 
+                  img{//z轴可以是负值  transform:translate3d(300px,100px,200px)} ;
+        滑过变大这是很重要:
+             #div1{
+               margin:0 auto;               
+               height: 300px;
+               width: 300px;
+               transform-style:preserve-3d;
+               perspective: 1000px;
+             }
+             img{
+               transition: transform 5s;              
+             }
+           img:hover{        
+               transform: translateZ(200px);
+           } 
+            //单独设置 3D 旋转: 
+                  transform: rotateX(45deg); 
+                  transform: rotateY(45deg); 
+                  transform: rotateZ(45deg); 
+                  transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+            3D的原点角是：perspective-origin:(x轴,y轴)  
+  
+            旋转：rotate(deg)  deg是度
+            倾斜：skew(x,y);X 轴和 Y 轴
+                  skewX(x)  skewY(y)  
+                  例如:skew(30deg,30deg)表示水平方向上倾斜30度，垂直方向倾斜30度。
+            缩放：transform:scale(0.5,1);水平方向缩小一半，垂直方向放大1倍。
+                  translate只使用一个参数视为在水平方向上移动，垂直方向上不移动
+
+      css前缀：
+         -webkit-Chrome/Safari   -o-(opera)   -moz-Firefox   -ms-IE
+         尺寸单位：rem    浏览器默认的是16px   62.2%是16px*62.2%
+      css渐变效果：
+         线性渐变：linear-gradient(方位，起始色，末尾色);
+            2个必须的参数：background-image:linear-gradient(orange,green);
+            有方位的：background-image:linear-gradient(to top,orange,green);
+            通过百分比设置多色线性位置: 
+              background-image: linear-gradient(-45deg, orange 0%, green 20%, blue 40%, red 100%);
+        放射性渐变：radial-gradient(方位，起始色，末尾色),它是从一个点 向四周发散的方式扩展。
+            background-image:radial-gradient(orange,green);
+            circle  圆形，  ellipse椭圆形，默认值
+        过渡效果：
+            过渡样式: transition-property:none/all ；例(color，background)  
+            过渡时间：transition-duration:1s;
+            过渡运行的状态：transition-timing-function:ease/linear(恒速)/ease-in/ease-out/ease-in-out
+            过渡延迟效果：transition-delay:2s;  可以设多个延迟的时间；
+            如果每个样式都是统一的，直接使用 all 
+               transition: all 1s ease 0s;
+        倒影：-webkit-box-reflect:
+              方向值:
+                  left倒影在左；below倒影在下边；right在右边；above在上边
+              倒影与对象的距离：   百分比/数字 可以是对象
+              遮罩倒影：线性渐变创建遮罩/径向渐变创建渐变
+    动画效果：
+        animation属性：
+        animation-name：myname                      动画的名字
+        animation-duration:3s                       动画播放所需要的时间
+        animation-timing-function:                  动画播放的方式
+            ease(默认)由快到慢逐渐变慢/linear/ease-in越来越快/ ease-out 越来越慢 
+        animation-delay:2s                          动画延迟的时间
+        animation-iteration-count:infinite/num(1...)动画播放循环的次数
+        animation-direction:alternate(交替)/normal  动画播放的方向
+        animation-play-state:running(运行) /paused(暂停)。动画播放的状态
+        animation-fill-mode:none(默认值，相当于没设置)/forwards(不再执行动画)
+
+    @keyframes作用:是声明一个动画，然后在 animation 调用关键帧声明的动画。
+        @keyframes myname{from{} to{}}      @keyframes{0%{} 50%{} 100%{}}
+
+    动画库引用学习：
+      1.首先引入animate css文件
+        <link rel="stylesheet" href="animate.min.css">
+      2.给指定的元素加上指定的动画样式名
+        <div class="animated swing"></div>
+      3.如果给某个元素添加动画样式，通过jQ 来是实现
+        $('#your').addClass('animated bounceOutLeft');
+      4.有时添加的的动画还需要删除展现原来的动画
+        $('#div').addClass('animated swing');
+        setTimeout(function(){
+           $('#div').removeClass('swing')
+        },1000)
+ ****************************************************       
+  CSS3-响应式：
+      手机端必须写的格式：
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      引用js文件是写的如下：
+          <link rel="stylesheet" media="screen and (max-device-width:480px)" href="style.css" />
+ 
+      CSS3: and前后要有空格：
+        @media screen and (max-width:100px){#div{样式}}
+        @media screen and (min-width:100px){}
+      JQ:自适应
+        $(window).on('resize',function(){$('div')})
+      JS:自适应
+        window.onsize=function(){div}
+******************************************************
+  CSS3-弹性伸缩：
+      新版本：
+          设置弹性：               div{display:flex;}
+          设置从上往下：           div{flex-direction:column}
+          设置从下往上：           div{flex-direction:column-reverse}
+          设置从左往右：           div{flex-direction:row}
+          设置从右往左：           div{flex-direction:row-reverse}
+          设置无法容纳时自动换行:  div{flex-wrap:wrap}
+          同上，方向相反:          div{flex-wrap:wrap-reverse}
+          简写方式：               div{flex-wrap:row wrap}
+          平均分布两端保留空间:    div{justify-content: space-around}
+          同上，但两端没有空间：   div{justify-content: space-between}
+          中心靠齐：               div{justify-content: center}
+          以结束点靠齐：           div{justify-content: flex-end}
+          以开始点靠齐：           div{justify-content: flex-start}
+          以顶部为基准清理下空间:  div{align-items:flex-start}
+          以底部为基准清理上空间:  div{align-items:flex-end}
+          以中部为基准清理两端空间:div{align-items:center}
+          
+          单独设置清理额外空间:    p:nth(2){align-self:center}
+          设置比例分配：           p:nth(1){flex:1}
+                                   p:nth(2){flex:3}
+                                   p:nth(3){flex:1}
+          设置伸缩项目顺序:        p:nth-child(1) { order: 2; }
+                                   p:nth-child(2) { order: 3; } 
+                                   p:nth-child(3) { order: 1; }          
+          窗口不足空间自动换行：div{display: flex; flex-wrap:wrap}
+                                div img{width: 300px}//这里设置固定的宽度，不要设置百分比
+                                              
+****************************************************** 
+CSS3-多列布局：
+      兼容写法：
+          -webkit-columns: 150px 4; 
+          -moz-columns: 150px 4; 
+          columns: border-box;内容包含边框
+          columns:150px 4;
+      例子：
+          分成四列，每列宽度自适应 
+          columns: auto 4;综合写法；
+      column-width:200px;
+          最小宽度的意思。当浏览器缩放到小于 200 大小时，将变成 1 列显示。而如果是 auto，则一直保持四列。
+      column-count：4; 用于设置多少列
+      column-gap:100px;用于设置列与列的间距
+      column-rule:1px dashed gray;设置每列之间的分割线；不会影响布局
+**************************************************** 
+Bootstrap结构框架：主要分为三大核心目录：css(样式)、js(脚本)、fonts(字体)。 
+      第一步引用css：
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+      第二步引用js:
+          <script src="js/jquery.min.js"></script> 
+          <script src="js/bootstrap.min.js"></script>
+    栅格系统：
+          1.固定宽度 .container 类用于固定宽度并支持响应式布局的容器
+              <div class="container"> ... </div>
+          2.行（row）”必须包含在 .container 
+          3.内容应当放置于“列（column）”内，并且，只有“列（column）”可以作为 行（row）”的直接子元素。
+          4.3个等宽的列 可以使用三个 .col-xs-4 来创建。 
+          5.如果一“行（row）”中包含了的“列（column）”大于 12，多余的“列（column）” 所在的元素将被作为一个整体另起一行排列。
+          6.例子：<div class="container"><div class="row"></div></div> 
+    辅组类：
+        各种色调的字体： 
+          <p class="text-muted">逐天软件开发有限公司 </p>     柔和灰  
+          <p class="text-primary">逐天软件开发有限公司 </p>   主要蓝
+          <p class="text-success">逐天软件开发有限公司 </p>   成功绿
+          <p class="text-info">逐天软件开发有限公司 </p>      信息蓝
+          <p class="text-warning">逐天软件开发有限公司 </p>   警告黄
+          <p class="text-danger">逐天软件开发有限公司</p>     危险红
+        各种色调的背景： 
+          <p class="bg-primary">Bootstrap </p>                主要蓝
+          <p class="bg-success">Bootstrap </p>                成功绿
+          <p class="bg-info">Bootstrap </p>                   信息蓝
+          <p class="bg-warning">Bootstrap </p>                警告黄
+          <p class="bg-danger">Bootstrap </p>                 危险红
+        关闭按钮 
+          <button type="button" class="close">&times;</button>
+        三角符号 
+          <span class="caret"></span>
+        显示和隐藏 
+          <div class="show">show</div> 
+          <div class="hidden">hidden</div>
+        快速浮动 
+          <div class="pull-left">左边</div> 
+          <div class="pull-right">右边</div> 
+        超小屏幕激活显示 
+          <div class="visible-xs-block a">Bootstrap</div>
+        超小屏幕激活隐藏 
+          <div class="hidden-xs a">Bootstrap</div>
+
+****************************************************
+
+H5知识点总结：
+    表单类型：
+         
+        <html lang="en">   en是英文；   <html lang="zh">  zh是中文
+        验证邮箱：
+            email     <input type="email"/>点击提交时提示信息
+        验证数字:
+            number     <input type="number" min="2" max="29" step="2"/>默认是：1，最大范围max  最小范围min  递增或递减的布长step
+        验证电话：
+            <input type="tel"/>  
+        验证类似进度条：
+            <input type="range" min="10" max="100" step="2" value="20">
+            最大范围max  最小范围min  递增或递减的布长step 初始值value
+        颜色拾取控件：
+            <input type="color"/> 
+        创建日期：
+            <input type="date"/> 
+        创建年份：
+            <input type="week"/>
+        图片提交：
+            <input type="image" src="max.jpg" name="" id="img">
+        网址文本：
+            <input type="url"/>  点击提交时提示信息
+        输入搜索关键词:
+            <input type="search"/>
+    表单属性:
+
+        自动完成功能:
+            autocomplete='autocomplete';     autocomplete='on'留有记忆   autocomplete='off'不留记忆
+        自动获取焦点：
+            autofocus:autofocus;   <input type="text" autofocus>
+        重写表单属性：
+            formaction重写action; formmethod重写method;formtarget重写target; formnovalidate 
+            重写属性适用于submit和image   
+        list属性：
+            <input type="text" list="test1">           
+            <datalist id="test1">
+               <option value="123123"></option>
+            </datalist>
+            <input type="submit" name="">
+        提示输入框的值：  placeholder
+        提交时不能为空：required   <input type="text" required>
+    视频处理：
+        <video width="360" height="240" src="video/2.mp4">
+        video元素至少要提供两种格式文件：OGG和MP4 
+        src属性：用于读取媒体文件
+        autoplay:自动播放
+        width和height设置视频宽高
+        source选择视频格式：
+            <video width="20" height="20">
+                <source src="video/2.mp4"/>
+                <source src="video/2.ogg"/>
+            </video>
+
+        controls:   显示浏览器所有的视频控制按钮
+        controls的3个属性：
+            1.poster:显示一副图像
+            2.loop:反复播放该视频
+            3.preload:有三个值：
+                  preload: none  不缓存视频，为了减少不必要的流量
+                  preload:metadata  播放前只加载视频的高度、宽度
+                  preload:auto; 默认值，要求浏览器尽可能快地下载视频
+            
+        paused:      暂停时触发，媒体处于暂停或未播放状态，这个值为true
+        ended:       到达末尾时触发，如果媒体已经结束播放，这个值为true
+        play：       开始播放时触发。
+        error：      播放出错时触发。  
+        duration:    返回媒体时长，以秒为单位
+        currentTime：获取或设置媒体播放位置
+        play()   播放视频
+        pause()  暂停播放
+        load()   提前加载视频
+        H5-例子：
+            //监听事件
+             window.onload=function(){
+                 elem=document.querySelector('media');
+                 elem.addEventListener('pause',usePause,false);
+                 elem.addEventListener('play',usePlay,false);
+             }
+             function usePause(){
+                 要触发的事件
+             }
+             function usePlay(){
+                 要触发的事件
+             }
+             //视频开始和停止的案例：
+             function playOrPause(){
+                 var video=document.querySelector('media');
+                 var btn=document.querySelector('play');
+                 if(video.pause){
+                   video.play();
+                   btn.value="停止";
+                 }else{
+                  video.pause();
+                  btn.value="开始";
+                 }
+             }
+    音频处理： audio元素和video元素一样的属性；
+
+
+
+ 
+
