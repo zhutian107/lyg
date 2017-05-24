@@ -1,3 +1,6 @@
+$('.top span').click(function(){
+    $('.top').hide();
+}); 
 var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,

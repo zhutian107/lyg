@@ -1,3 +1,6 @@
+$('.top span').click(function(){
+	$('.top').hide();
+}); 
 $('.jiudian_txt').click(function(){
 	$('.txt_address').show();
 });

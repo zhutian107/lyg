@@ -1,0 +1,383 @@
+{
+    "error_code": 0,
+    "result": "ok",
+    "data": {
+        "code": [
+            {
+                "name": "圣文森特岛（英）",
+                "code": "001784",
+                "pinyin": "ShengWenSenTeDaoYing"
+            },
+            {
+                "name": "斯里兰卡",
+                "code": "0094",
+                "pinyin": "SiLiLanKa"
+            },
+            {
+                "name": "斯洛伐克",
+                "code": "00421",
+                "pinyin": "SiLuoFaKe"
+            },
+            {
+                "name": "斯洛文尼亚",
+                "code": "00386",
+                "pinyin": "SiLuoWenNiYa"
+            },
+            {
+                "name": "斯威士兰",
+                "code": "00268",
+                "pinyin": "SiWeiShiLan"
+            },
+            {
+                "name": "苏丹",
+                "code": "00249",
+                "pinyin": "SuDan"
+            },
+            {
+                "name": "苏里南",
+                "code": "00597",
+                "pinyin": "SuLiNan"
+            },
+            {
+                "name": "所罗门群岛",
+                "code": "00677",
+                "pinyin": "SuoLuoMenQunDao"
+            },
+            {
+                "name": "索马里",
+                "code": "00252",
+                "pinyin": "SuoMaLi"
+            },
+            {
+                "name": "泰国",
+                "code": "0066",
+                "pinyin": "TaiGuo"
+            },
+            {
+                "name": "台湾",
+                "code": "00886",
+                "pinyin": "TaiWan"
+            },
+            {
+                "name": "塔吉克斯坦共和国",
+                "code": "00992",
+                "pinyin": "TaJiKeSiTanGongHeGuo"
+            },
+            {
+                "name": "汤加",
+                "code": "00676",
+                "pinyin": "TangJia"
+            },
+            {
+                "name": "坦桑尼亚",
+                "code": "00255",
+                "pinyin": "TanSangNiYa"
+            },
+            {
+                "name": "特克斯和凯科斯群岛",
+                "code": "001649",
+                "pinyin": "TeKeSiHeKaiKeSiQunDao"
+            },
+            {
+                "name": "特立尼达和多巴哥",
+                "code": "001868",
+                "pinyin": "TeLiNiDaHeDuoBaGe"
+            },
+            {
+                "name": "土耳其",
+                "code": "0090",
+                "pinyin": "TuErQi"
+            },
+            {
+                "name": "土库曼斯坦共和国",
+                "code": "00993",
+                "pinyin": "TuKuManSiTanGongHeGuo"
+            },
+            {
+                "name": "突尼斯",
+                "code": "00216",
+                "pinyin": "TuNiSi"
+            },
+            {
+                "name": "托克鲁",
+                "code": "00690",
+                "pinyin": "TuoKeLu"
+            },
+            {
+                "name": "图瓦卢",
+                "code": "00688",
+                "pinyin": "TuWaLu"
+            },
+            {
+                "name": "瓦里斯和富士那群岛",
+                "code": "001681",
+                "pinyin": "WaLiSiHeFuShiNaQunDao"
+            },
+            {
+                "name": "瓦努阿图",
+                "code": "00678",
+                "pinyin": "WaNuATu"
+            },
+            {
+                "name": "危地马拉",
+                "code": "00502",
+                "pinyin": "WeiDiMaLa"
+            },
+            {
+                "name": "维尔京群岛",
+                "code": "001340",
+                "pinyin": "WeiErJingQunDao"
+            },
+            {
+                "name": "威克岛",
+                "code": "001808",
+                "pinyin": "WeiKeDao"
+            },
+            {
+                "name": "委内瑞拉",
+                "code": "0058",
+                "pinyin": "WeiNaRuiLa"
+            },
+            {
+                "name": "文莱",
+                "code": "00673",
+                "pinyin": "WenLai"
+            },
+            {
+                "name": "乌干达",
+                "code": "00256",
+                "pinyin": "WuGanDa"
+            },
+            {
+                "name": "乌克兰",
+                "code": "00380",
+                "pinyin": "WuKeLan"
+            },
+            {
+                "name": "乌拉圭",
+                "code": "00598",
+                "pinyin": "WuLaGui"
+            },
+            {
+                "name": "乌兹别克斯坦共和国",
+                "code": "00998",
+                "pinyin": "WuZiBieKeSiTanGongHeGuo"
+            },
+            {
+                "name": "香港",
+                "code": "00852",
+                "pinyin": "XiangGang"
+            },
+            {
+                "name": "夏威夷",
+                "code": "001808",
+                "pinyin": "XiaWeiYi"
+            },
+            {
+                "name": "西班牙",
+                "code": "0034",
+                "pinyin": "XiBanYa"
+            },
+            {
+                "name": "巴布亚新几内亚",
+                "code": "00675",
+                "pinyin": "BaBuYaXinJiNaYa"
+            },
+            {
+                "name": "巴哈马",
+                "code": "001242",
+                "pinyin": "BaHaMa"
+            },
+            {
+                "name": "白俄罗斯共和国",
+                "code": "00375",
+                "pinyin": "BaiELuoSiGongHeGuo"
+            },
+            {
+                "name": "百慕大群岛",
+                "code": "001441",
+                "pinyin": "BaiMuDaQunDao"
+            },
+            {
+                "name": "巴基斯坦",
+                "code": "0092",
+                "pinyin": "BaJiSiTan"
+            },
+            {
+                "name": "巴拉圭",
+                "code": "00595",
+                "pinyin": "BaLaGui"
+            },
+            {
+                "name": "巴勒斯坦",
+                "code": "00970",
+                "pinyin": "BaLeSiTan"
+            },
+            {
+                "name": "巴林",
+                "code": "00973",
+                "pinyin": "BaLin"
+            },
+            {
+                "name": "巴拿马",
+                "code": "00507",
+                "pinyin": "BaNaMa"
+            },
+            {
+                "name": "保加利亚",
+                "code": "00359",
+                "pinyin": "BaoJiaLiYa"
+            },
+            {
+                "name": "巴西",
+                "code": "0055",
+                "pinyin": "BaXi"
+            },
+            {
+                "name": "贝宁",
+                "code": "00229",
+                "pinyin": "BeiNing"
+            },
+            {
+                "name": "比利时",
+                "code": "0032",
+                "pinyin": "BiLiShi"
+            },
+            {
+                "name": "冰岛",
+                "code": "00354",
+                "pinyin": "BingDao"
+            },
+            {
+                "name": "博茨瓦纳",
+                "code": "00267",
+                "pinyin": "BoCiWaNa"
+            },
+            {
+                "name": "波多黎哥",
+                "code": "001787",
+                "pinyin": "BoDuoLiGe"
+            },
+            {
+                "name": "波多黎哥",
+                "code": "001787",
+                "pinyin": "BoDuoLiGe"
+            },
+            {
+                "name": "波兰",
+                "code": "0048",
+                "pinyin": "BoLan"
+            },
+            {
+                "name": "玻利维亚",
+                "code": "00591",
+                "pinyin": "BoLiWeiYa"
+            },
+            {
+                "name": "伯利兹",
+                "code": "00501",
+                "pinyin": "BoLiZi"
+            },
+            {
+                "name": "波斯尼亚和塞哥维那",
+                "code": "00387",
+                "pinyin": "BoSiNiYaHeSaiGeWeiNa"
+            },
+            {
+                "name": "不丹",
+                "code": "00975",
+                "pinyin": "BuDan"
+            },
+            {
+                "name": "布基拉法索",
+                "code": "00226",
+                "pinyin": "BuJiLaFaSuo"
+            },
+            {
+                "name": "布隆迪",
+                "code": "00257",
+                "pinyin": "BuLongDi"
+            },
+            {
+                "name": "朝鲜",
+                "code": "00850",
+                "pinyin": "ChaoXian"
+            },
+            {
+                "name": "赤道几内亚",
+                "code": "00240",
+                "pinyin": "ChiDaoJiNaYa"
+            },
+            {
+                "name": "丹麦",
+                "code": "0045",
+                "pinyin": "DanMai"
+            },
+            {
+                "name": "德国",
+                "code": "0049",
+                "pinyin": "DeGuo"
+            },
+            {
+                "name": "迪戈加西亚",
+                "code": "00246",
+                "pinyin": "DiGeJiaXiYa"
+            },
+            {
+                "name": "东萨摩亚",
+                "code": "00684",
+                "pinyin": "DongSaMoYa"
+            },
+            {
+                "name": "多哥",
+                "code": "00228",
+                "pinyin": "DuoGe"
+            },
+            {
+                "name": "多米尼加共和国",
+                "code": "001809",
+                "pinyin": "DuoMiNiJiaGongHeGuo"
+            },
+            {
+                "name": "多米尼加联邦",
+                "code": "001767",
+                "pinyin": "DuoMiNiJiaLianBang"
+            },
+            {
+                "name": "厄瓜多尔",
+                "code": "00593",
+                "pinyin": "EGuaDuoEr"
+            },
+            {
+                "name": "厄里特里亚",
+                "code": "00291",
+                "pinyin": "ELiTeLiYa"
+            },
+            {
+                "name": "俄罗斯联邦",
+                "code": "007",
+                "pinyin": "ELuoSiLianBang"
+            },
+            {
+                "name": "法国",
+                "code": "0033",
+                "pinyin": "FaGuo"
+            },
+            {
+                "name": "法罗群岛",
+                "code": "00298",
+                "pinyin": "FaLuoQunDao"
+            },
+            {
+                "name": "梵蒂冈",
+                "code": "003906698",
+                "pinyin": "FanDiGang"
+            },
+            {
+                "name": "法属波里尼西亚、塔希提",
+                "code": "00689",
+                "pinyin": "FaShuBoLiNiXiYaTaXiTi"
+            }
+        ]
+    }
+}

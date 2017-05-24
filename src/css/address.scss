@@ -1,0 +1,351 @@
+.top{
+	width: 100%;
+	height: 6rem;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	.glyphicon-remove{
+		position: absolute;
+		top: 1rem;
+		font-size: 3rem;
+		right: 20rem;
+		display: inline-block;
+		border-radius: 50%;
+		background: #fff;
+	}
+}
+#address{
+	width: 100%;
+	padding: 0;
+	margin:0;
+	header{
+		width: 100%;
+		height: 3rem;		
+		background:black;
+		display: flex;
+		justify-content: space-between;
+		z-index: 1000;
+		.header_left{
+			height: 3rem;
+			flex:3;
+			padding-top: 0.5rem;
+			margin-left: 2rem;			
+			img{
+				width: 4.2rem;
+				height: 2rem;
+		   }
+
+		   a{
+		   	height: 100%;
+		    padding-top: 1rem; 
+		   	text-decoration-line: none;
+			color: white;
+			/*font-size: 1.8rem;			*/
+			margin-left: 3rem;								
+		   }
+		   .shopMark{
+		   	  position: absolute;
+		   	  top: -0.2rem;
+		   	  left: 43rem;
+		   	  width: 5rem;		   	 
+              img{
+              	 width: 5rem;
+                 height: 1.3rem;
+                 float: left;               
+              }
+              .arrow{
+              	width: 1rem;
+              	height: 0.7rem;
+              	float: right;
+              }
+		   }		  
+		}
+		.header_right{
+			flex:1;
+			position: relative;
+			line-height: 3rem;
+			
+			span{
+				color: white;
+				margin-right: 2rem;
+			}		
+			.txt{
+				position: absolute;
+				left: -15rem;
+				height: 1rem;
+				top: 2.5rem;
+				display: none;
+				border-radius: 0.5rem;
+			}
+			a{
+				color: white;
+				margin-right: 2rem;
+				text-decoration-line: none;
+			}			
+		}
+	}
+	.pic_big_01{
+		width: 100%;
+		height: 50rem;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.pic_big_quanqiu{
+			position: absolute;
+			top: 15rem;
+			left:30rem;
+			color: #fff;
+			text-align: center;
+			input{
+				width: 22.6rem;
+				height: 4.4rem;
+				border:0;
+			}
+			input[type=button]{
+				width: 14rem;
+				color: black;
+				background: #fff;
+				border:0;
+			}
+			button{
+				width: 14rem;
+				height: 4.4rem;
+				border:0;
+				background: #FF9800;
+			}
+            p{
+            	margin-bottom: 5rem;
+            	font-size: 1.6rem;
+            }
+            .txt_address{
+            	position: absolute;
+            	width: 30rem;
+            	height: 24.2rem;
+            	text-align: left;
+            	background: #fff;
+            	border:0.1rem solid #ccc;
+            	display: none;
+            	p{
+            		margin:0;
+            		color: black;
+            		line-height:5rem;
+            		border-bottom: 0.1rem solid #ccc; 
+            	}
+            	a{
+            		color: #077345;
+            		display: inline-block;
+            		width: 4.5rem;
+            		height: 3.5rem;
+            	}
+            }
+		}
+	}
+	.address_jing{
+		width: 100%;
+		height: 50rem;
+		position: relative;
+		img{
+			width: 100%;
+			height: 50rem;
+		}
+		.address_sou{
+			position: absolute;
+			text-align: center;
+			top: 10rem;
+			left: 25%;
+			h1{
+				color: #fff;
+				font-size: 5rem;
+			}
+			.address_sou_mask{
+				width: 64rem;
+				height: 14rem;
+				background: rgba(0,0,0,0.7);
+				padding: 2rem;
+				position: relative;
+				.glyphicon-search{
+					position: absolute;
+					right: 3rem;
+					top: 3rem;
+					font-size: 2.5rem;
+					color: gray;
+				}
+				input{
+					width: 60rem;
+					height: 5.2rem;
+					font-size: 2rem;
+				}
+				p{
+					text-align: left;
+					color: #fff;
+					span{
+						margin-right: 2rem;
+					}
+				}
+			}
+		}
+	}
+	main{
+		width: 98rem;
+		margin:5rem auto;
+		.main_top_pic{
+			width: 100%;
+			img{
+				width: 100%;
+				height: 10rem;
+			}
+		}
+		.main_nav_1{
+			width: 100%;
+            height: 3rem;
+            display: flex;
+            margin-top: 1rem;
+            justify-content: space-between;
+            a{
+            	display: inline-block;
+            	padding: 0.5rem; 
+            	color: black;
+            	margin-right: 1rem;
+            	border-radius: 0.4rem;
+            }
+            .nav_a1{
+            	background: #65B17F; 
+            	color: #fff;
+            	border-radius: 0.4rem;
+            }
+            span{
+            	font-size: 2.2rem;
+            	flex: 0.8;
+            }
+		}
+		.main_pics{
+			width: 100%;
+			height: 61rem;
+			margin-top: 1rem;
+			position: relative;
+			div{
+				overflow: hidden;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				.main_pics_name{
+					position: absolute;
+					bottom: 0;
+					color: #fff;
+					font-size:3rem;
+			   }
+			   .pics_mask{
+			   	  width: 100%;
+			   	  background: rgba(0,0,0,0.7);
+			   	  position: absolute;
+			   	  bottom: 0;
+			   	  display: none;
+			   	  font-size: 1.6rem;
+			   	  color: #fff;
+			   }
+			}
+			div:hover img{
+				transition: all 2s;
+				transform: scale(1.2);
+			}
+			.pics_1{
+				width: 39rem;
+				height: 20rem;
+				position: absolute;
+				top: 0;
+				left: 0; 
+			}
+			.pics_2{
+				width: 19rem;
+				height: 20rem;
+				position: absolute;
+				top: 0;
+				left: 39.5rem; 
+			}
+			.pics_3{
+				width: 19rem;
+				height: 40.5rem;
+				position: absolute;
+				top: 0;
+				left: 59rem;  
+			}
+			.pics_4{
+				width: 19rem;
+				height: 20rem;
+				position: absolute;
+				top: 0;
+				right:0;  
+			}
+			.pics_5{
+				width: 19rem;
+				height: 40.5rem;
+				position: absolute;
+				top: 20.5rem;  
+			}
+			.pics_6{
+				width: 39rem;
+				height: 20rem;
+				position: absolute;
+				top: 20.5rem;
+				left: 19.5rem;  
+			}
+			.pics_7{
+				width: 19rem;
+				height: 20rem;
+				position: absolute;
+				top: 20.5rem;
+				right: 0;  
+			}
+			.pics_8{
+				width: 19rem;
+				height: 20rem; 
+				position: absolute;
+				top: 41rem;
+				left: 19.5rem; 
+			}
+			.pics_9{
+				width: 19rem;
+				height: 20rem;
+				position: absolute;
+				top: 41rem;
+				left: 39rem;  
+			}
+			.pics_10{
+				width: 39rem;
+				height: 20rem;
+				position: absolute;
+				top: 41rem;
+				right: 0;  
+			}
+		}
+		.ul_name{
+			width: 100%;
+			padding: 0;
+			li{
+				width: 33%;
+				float: left;
+				list-style: none;
+				white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+				a{
+					color: black;
+					span{
+						color:#ccc;
+					}
+				}
+			}
+		}
+		footer{
+			width: 130%;
+			height: 10rem;
+			margin-left:-15rem;
+			border-top: 0.5rem solid green;
+			background: #323232;
+			clear: both;
+		}
+	}
+}	

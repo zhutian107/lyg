@@ -1,0 +1,143 @@
+{
+    "error_code": 0,
+    "result": "ok",
+    "data": {
+        "code": [
+            {
+                "name": "阿尔巴尼亚",
+                "code": "00355",
+                "pinyin": "AErBaNiYa"
+            },
+            {
+                "name": "阿尔及利亚",
+                "code": "00213",
+                "pinyin": "AErJiLiYa"
+            },
+            {
+                "name": "阿富汗",
+                "code": "0093",
+                "pinyin": "AFuHan"
+            },
+            {
+                "name": "阿根廷",
+                "code": "0054",
+                "pinyin": "AGenTing"
+            },
+            {
+                "name": "爱尔兰",
+                "code": "00353",
+                "pinyin": "AiErLan"
+            },
+            {
+                "name": "埃及",
+                "code": "0020",
+                "pinyin": "AiJi"
+            },
+            {
+                "name": "埃塞俄比亚",
+                "code": "00251",
+                "pinyin": "AiSaiEBiYa"
+            },
+            {
+                "name": "爱沙尼亚",
+                "code": "00372",
+                "pinyin": "AiShaNiYa"
+            },
+            {
+                "name": "阿拉斯加",
+                "code": "001907",
+                "pinyin": "ALaSiJia"
+            },
+            {
+                "name": "阿联酋",
+                "code": "00971",
+                "pinyin": "ALianQiu"
+            },
+            {
+                "name": "阿鲁巴岛",
+                "code": "00297",
+                "pinyin": "ALuBaDao"
+            },
+            {
+                "name": "阿曼",
+                "code": "00968",
+                "pinyin": "AMan"
+            },
+            {
+                "name": "安道尔",
+                "code": "00376",
+                "pinyin": "AnDaoEr"
+            },
+            {
+                "name": "安哥拉",
+                "code": "00244",
+                "pinyin": "AnGeLa"
+            },
+            {
+                "name": "安圭拉岛",
+                "code": "001264",
+                "pinyin": "AnGuiLaDao"
+            },
+            {
+                "name": "安提瓜和巴布达",
+                "code": "001268",
+                "pinyin": "AnTiGuaHeBaBuDa"
+            },
+            {
+                "name": "澳大利亚",
+                "code": "0061",
+                "pinyin": "AoDaLiYa"
+            },
+            {
+                "name": "奥地利",
+                "code": "0043",
+                "pinyin": "AoDiLi"
+            },
+            {
+                "name": "澳门",
+                "code": "00853",
+                "pinyin": "AoMen"
+            },
+            {
+                "name": "阿塞拜疆",
+                "code": "00994",
+                "pinyin": "ASaiBaiJiang"
+            },
+            {
+                "name": "阿森松",
+                "code": "00247",
+                "pinyin": "ASenSong"
+            },
+            {
+                "name": "巴巴多斯",
+                "code": "001246",
+                "pinyin": "BaBaDuoSi"
+            },
+            {
+                "name": "巴布亚新几内亚",
+                "code": "00675",
+                "pinyin": "BaBuYaXinJiNaYa"
+            },
+            {
+                "name": "巴哈马",
+                "code": "001242",
+                "pinyin": "BaHaMa"
+            },
+            {
+                "name": "白俄罗斯共和国",
+                "code": "00375",
+                "pinyin": "BaiELuoSiGongHeGuo"
+            },
+            {
+                "name": "百慕大群岛",
+                "code": "001441",
+                "pinyin": "BaiMuDaQunDao"
+            },
+            {
+                "name": "巴基斯坦",
+                "code": "0092",
+                "pinyin": "BaJiSiTan"
+            }
+        ]
+    }
+}
