@@ -1,0 +1,285 @@
+.top {
+  width: 100%;
+  height: 6rem; }
+  .top img {
+    width: 100%;
+    height: 100%; }
+  .top .glyphicon-remove {
+    position: absolute;
+    top: 1rem;
+    font-size: 3rem;
+    right: 20rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff; }
+
+#xingcheng {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  #xingcheng header {
+    width: 100%;
+    height: 3rem;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; }
+    #xingcheng header .header_left {
+      height: 3rem;
+      flex: 3;
+      padding-top: 0.5rem;
+      margin-left: 2rem; }
+      #xingcheng header .header_left img {
+        width: 4.2rem;
+        height: 2rem; }
+      #xingcheng header .header_left a {
+        height: 100%;
+        padding-top: 1rem;
+        text-decoration-line: none;
+        color: white;
+        /*font-size: 1.8rem;			*/
+        margin-left: 3rem; }
+      #xingcheng header .header_left .shopMark {
+        position: absolute;
+        top: -0.2rem;
+        left: 43rem;
+        width: 5rem; }
+        #xingcheng header .header_left .shopMark img {
+          width: 5rem;
+          height: 1.3rem;
+          float: left; }
+        #xingcheng header .header_left .shopMark .arrow {
+          width: 1rem;
+          height: 0.7rem;
+          float: right; }
+    #xingcheng header .header_right {
+      flex: 1;
+      position: relative;
+      line-height: 3rem; }
+      #xingcheng header .header_right span {
+        color: white;
+        margin-right: 2rem; }
+      #xingcheng header .header_right .txt {
+        position: absolute;
+        left: -15rem;
+        height: 1rem;
+        top: 2.5rem;
+        display: none;
+        border-radius: 0.5rem; }
+      #xingcheng header .header_right a {
+        color: white;
+        margin-right: 2rem;
+        text-decoration-line: none; }
+  #xingcheng .pic_big_01 {
+    width: 100%;
+    height: 50rem; }
+    #xingcheng .pic_big_01 img {
+      width: 100%;
+      height: 100%; }
+    #xingcheng .pic_big_01 .pic_big_quanqiu {
+      position: absolute;
+      top: 15rem;
+      left: 30rem;
+      color: #fff;
+      text-align: center; }
+      #xingcheng .pic_big_01 .pic_big_quanqiu input {
+        width: 22.6rem;
+        height: 4.4rem;
+        border: 0; }
+      #xingcheng .pic_big_01 .pic_big_quanqiu input[type=button] {
+        width: 14rem;
+        color: black;
+        background: #fff;
+        border: 0; }
+      #xingcheng .pic_big_01 .pic_big_quanqiu button {
+        width: 14rem;
+        height: 4.4rem;
+        border: 0;
+        background: #FF9800; }
+      #xingcheng .pic_big_01 .pic_big_quanqiu p {
+        margin-bottom: 5rem;
+        font-size: 1.6rem; }
+      #xingcheng .pic_big_01 .pic_big_quanqiu .txt_address {
+        position: absolute;
+        width: 30rem;
+        height: 24.2rem;
+        text-align: left;
+        background: #fff;
+        border: 0.1rem solid #ccc;
+        display: none; }
+        #xingcheng .pic_big_01 .pic_big_quanqiu .txt_address p {
+          margin: 0;
+          color: black;
+          line-height: 5rem;
+          border-bottom: 0.1rem solid #ccc; }
+        #xingcheng .pic_big_01 .pic_big_quanqiu .txt_address a {
+          color: #077345;
+          display: inline-block;
+          width: 4.5rem;
+          height: 3.5rem; }
+  #xingcheng .pic_logo {
+    width: 100%;
+    height: 5rem;
+    padding: 0;
+    display: flex; }
+    #xingcheng .pic_logo p {
+      display: flex;
+      flex: 2; }
+      #xingcheng .pic_logo p #logo {
+        display: inline-block;
+        width: 13rem;
+        height: 5rem;
+        background: url(../images/loading.gif) no-repeat center center;
+        background-size: 100%; }
+      #xingcheng .pic_logo p span {
+        color: #41C074;
+        font-size: 2rem;
+        font-weight: bold; }
+      #xingcheng .pic_logo p .zhushou {
+        margin-top: 1rem;
+        margin-left: -2rem; }
+    #xingcheng .pic_logo nav {
+      flex: 1; }
+      #xingcheng .pic_logo nav a {
+        display: inline-block;
+        font-size: 1.6rem;
+        margin-left: 3rem;
+        line-height: 5rem;
+        color: #7D7D7D; }
+      #xingcheng .pic_logo nav a:hover {
+        color: #41C074;
+        background: #ccc;
+        text-decoration: none; }
+  #xingcheng .xingcheng_jing {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    background: url("../images/bg.png"); }
+    #xingcheng .xingcheng_jing h6 {
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+      font-weight: bold;
+      line-height: 10rem; }
+      #xingcheng .xingcheng_jing h6 span {
+        font-size: 4rem;
+        font-weight: normal; }
+    #xingcheng .xingcheng_jing p {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 1.6rem; }
+    #xingcheng .xingcheng_jing .buts {
+      margin: 0 auto;
+      width: 24rem; }
+      #xingcheng .xingcheng_jing .buts button {
+        color: #41C074;
+        width: 23rem;
+        height: 4.5rem;
+        background: #fff;
+        border: 0; }
+      #xingcheng .xingcheng_jing .buts .bu {
+        display: none;
+        border: 0.1rem solid #fff;
+        background: #41C074;
+        color: #fff; }
+    #xingcheng .xingcheng_jing .dong_div {
+      width: 50rem;
+      height: 23rem;
+      position: relative;
+      top: -2rem;
+      left: 38rem; }
+      #xingcheng .xingcheng_jing .dong_div img {
+        width: 47rem;
+        height: 20rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem; }
+  #xingcheng main {
+    width: 98rem;
+    margin: 5rem auto; }
+    #xingcheng main .main_top_pic {
+      width: 100%; }
+      #xingcheng main .main_top_pic img {
+        width: 100%;
+        height: 10rem; }
+    #xingcheng main h3 {
+      width: 100%;
+      height: 9rem;
+      line-height: 9rem;
+      text-align: center; }
+    #xingcheng main .main_xuanzhi {
+      width: 100%;
+      height: 33rem;
+      border: 0.1rem solid;
+      list-style: none;
+      padding: 0; }
+      #xingcheng main .main_xuanzhi li {
+        width: 100%;
+        height: 5rem;
+        line-height: 5rem;
+        border-bottom: 0.1rem dashed; }
+        #xingcheng main .main_xuanzhi li a {
+          color: black;
+          padding-left: 3rem; }
+        #xingcheng main .main_xuanzhi li a:hover {
+          color: blue; }
+    #xingcheng main .xingcheng_shuju {
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #xingcheng main .xingcheng_shuju li {
+        width: 31rem;
+        height: 33rem;
+        border: 0.1rem solid #ccc;
+        border-radius: 2rem;
+        position: relative;
+        margin-top: 3rem; }
+        #xingcheng main .xingcheng_shuju li div {
+          width: 100%;
+          height: 20rem;
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+          overflow: hidden; }
+          #xingcheng main .xingcheng_shuju li div img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem; }
+        #xingcheng main .xingcheng_shuju li div:hover img {
+          transition: all 2s;
+          transform: scale(1.2);
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem; }
+        #xingcheng main .xingcheng_shuju li .p_span {
+          width: 100%;
+          height: 4rem; }
+          #xingcheng main .xingcheng_shuju li .p_span span {
+            padding: 0.5rem 2rem;
+            display: inline-block;
+            border-radius: 2rem;
+            background: #ccc;
+            text-align: center;
+            margin: 1rem; }
+      #xingcheng main .xingcheng_shuju li:hover .cope {
+        display: block; }
+      #xingcheng main .xingcheng_shuju .name_city {
+        line-height: 4rem; }
+      #xingcheng main .xingcheng_shuju .glyphicon-eye-open {
+        margin-left: 15rem; }
+      #xingcheng main .xingcheng_shuju .cope {
+        display: inline-block;
+        width: 7rem;
+        height: 3rem;
+        background: #499F6B;
+        border-radius: 1rem;
+        text-align: center;
+        line-height: 3rem;
+        color: #fff;
+        position: absolute;
+        margin: 1rem;
+        display: none; }
