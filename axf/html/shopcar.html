@@ -1,0 +1,6 @@
+ <div>
+    <button ng-click='removeAll()' class="del_btn">全部删除</button>
+    <ul class="shop_ul">
+        <li ng-repeat='obj in list track by $index'>{{obj.name}}:{{obj.count}}<span ng-click='dele(obj,$index)' class="del">一</span></li>       
+    </ul>
+</div>

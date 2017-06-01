@@ -1,0 +1,44 @@
+*{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+html{
+	font-size: 10px;
+}
+.ul_1{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background: #F6F6F6;
+	position: fixed;
+	bottom: 0;
+	height: 5.4rem;
+}
+.ul_1 a{
+	color:black;
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+.ul_1 span{
+	background-image:url(../images/img1/sprite_tab_icons.png); 
+	display: block;
+	width: 3.5rem;
+	height: 3rem;
+	background-size: 450% 200%;
+}
+.cla1{
+    background-position: 0 0;
+}
+.cla2{
+	background-position: 25% 0;
+}
+.cla3{
+	background-position: 50% 0;
+}
+.cla4{
+	background-position: 75% 0;
+}
+.cla5{
+	background-position: 100% 0;
+}

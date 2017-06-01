@@ -1,11 +1,44 @@
-
-<ul id="home">
-	<li ng-repeat="obj in arr">
-		<img ng-src="{{obj.img}}" alt="">
-		<div>
-			<h4>{{obj.title}}</h4>
-			<p>{{obj.main}}</p>
-		</div>
-		<button ng-click="btn()">移除</button>
-	</li>
-</ul>
+<div id="wrap">
+	<header>
+	    <h2>驼坊营路附近</h2>
+	    <dl class="dl_1">
+	        <dt><img src="../images/img1/ico_search.png" alt=""></dt>
+	        <dd>搜索</dd>
+	    </dl>
+	</header>
+	<div class="null"></div>
+	<div id="lunbotu">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" ng-repeat="swip in swipers"><img ng-src="{{swip.img}}" alt=""></div>
+		    </div>
+	        <div class="swiper-pagination"></div>
+	    </div>
+	</div>
+    <ul class="everyday">
+         <li ng-repeat='s1 in arr1'><img ng-src={{s1.activity.img}}><p>{{s1.activity.name}}</p></li>       
+    </ul>
+    <ul class="imgs_1">
+        <li ng-repeat='s2 in arr2'><img ng-src={{s2.activity.img}} alt=""></li>      
+    </ul>
+    <div class="bianlidian">
+        <p><img src="../images/img1/bianlidian.png" alt=""></p>
+        <div class="rexiao"><img src="../images/img1/2016092417285271.jpg@90Q.jpg" alt=""><img src="../images/img1/2017030919451621.jpg@90Q.jpg" alt=""></div>
+        <ul class="ul_3">
+          <li ng-repeat='s3 in arr3'><img ng-src={{s3.img}}><p>{{s3.title}}</p></li>
+        </ul>
+        <ul class="ul_4">
+            <li ng-repeat='s4 in arr4'><img ng-src={{s4.activity.img}} alt=""></li>
+        </ul>
+    </div>
+    <div class="chanpin">        
+        <div ng-repeat='s5 in arr5' class="chanpin_2">
+        	<p class="chanpin_p1">{{s5.activity.name}}<a href="javascript:void(0)">更多&gt</a></p>
+        	<h1><img ng-src={{s5.activity.img}} alt=""></h1>
+        	<ul>
+        		<li ng-repeat='s6 in s5.category_detail.goods'><img src={{s6.img}} alt=""><p class="p_name">{{s6.name}}</p><p><span class="spa_2">精选</span><span class="spa_1">{{s6.pm_desc}}</span></p><p class="p_jieshao">{{s6.specifics}}</p><p><span class="spa_3">{{s6.partner_price}}</span><span class="spa_4">{{s6.market_price}}</span><span class="spa_5">十</span></p></li>
+        	</ul>
+        </div>
+    </div>
+    <footer></footer>
+</div>

@@ -1,0 +1,214 @@
+#wrap{
+	width: 100%;
+	/*height: 2000rem;*/
+	background:#EFEFEF;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+header{
+	width: 100%;
+	height: 5.373rem;
+	background:#FFD600; 
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+header h2{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 5.373rem;
+}
+.null{
+	width: 100%;
+	height:5.373rem; 
+}
+.dl_1{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.8rem;
+}
+.dl_1 dt img{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+#lunbotu {
+	  position: relative;
+	  width: 100%;
+	  height: 14.5rem;
+	  background: #eee;
+	  box-sizing: border-box;
+    }
+#lunbotu img {
+	  width: 100%;
+	  height: 14.5rem; 
+	}
+.swiper-pagination{
+	margin-left: 10rem;
+}
+.everyday{
+	width: 100%;
+	height: 23rem;
+	background:white;
+	margin-top: 1rem;
+}
+.everyday li{	
+	width: 25%;
+	float: left;
+	padding-top: 2rem;
+	/*padding-bottom: 1rem;*/
+	text-align: center;
+}
+.everyday li p{
+	width: 100%;
+	/*height: 20%;	*/
+	font-size: 1.4rem;
+	padding-bottom: 1rem;
+}
+.everyday li img{
+    width: 100%;
+    height: 80%;
+}
+.imgs_1{
+	width: 100%;
+	height: 33rem;
+	background:white;
+	margin-top: 1rem;
+}
+.imgs_1 li{
+	width: 33.3%;
+	float: left;
+}
+.imgs_1 li img{
+	width: 100%;
+	height: 100%;
+}
+.bianlidian{
+	width: 100%;
+	height: 37rem;
+	background:white;
+	margin-top: 1rem;
+}
+.bianlidian p img{
+	width: 100%;
+	height: 5.5rem;
+}
+.rexiao{
+	display: flex;
+	justify-content: space-around;
+}
+.bianlidian div img{
+	width: 46%;
+	height: 6.4rem;
+}
+.ul_3{	
+	display: flex;
+	justify-content: space-between;
+}
+.ul_3 li{
+	width: 25%;
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.bianlidian li img{
+	width: 100%;
+}
+.ul_4{
+	margin-top: 1rem;
+	border-top: 0.1rem solid #ccc;
+}
+.ul_4 li{
+	width: 48%;
+	border-left:0.1rem solid #ccc;
+	border-bottom:0.1rem solid #ccc;
+	float: left;
+}
+.chanpin{
+	width: 100%;
+	font-size: 1.4rem;
+	background-color: #ccc;
+}
+.chanpin_2{
+	width: 100%;
+	height: 40rem;
+	background-color:white;
+	margin-top: 1rem;
+}
+.chanpin_p1{
+	font-size: 1.6rem;
+	color: orange;
+	height: 4.6rem;
+	line-height: 4.6rem;
+}
+.chanpin p a{
+	float: right;
+	color: black;
+}
+.chanpin h1 img{
+	width: 100%;
+	height: 100%;
+}
+.chanpin ul li{
+	float: left;
+	width: 33%;
+	padding-left: 1rem;
+	border-right: 0.1rem solid #ccc;
+	box-sizing: border-box;
+}
+.p_name{
+	width: 100%;
+	height: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.p_jieshao{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.chanpin li img{
+    width: 100%;
+    height: 100%;
+}
+.spa_1,.spa_2{
+    display: inline-block;    
+    border-radius: 0.5rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+.spa_2{
+	color: red;
+	border:0.1rem solid red;
+}
+.spa_1{
+	background:red;
+	color: white;
+}
+.spa_3{
+	display: inline-block;
+	color: red;
+	margin-right: 1rem;
+}
+.spa_4{
+	display: inline-block;
+	text-decoration: line-through;
+}
+.spa_5{
+	display: inline-block;
+	border:0.2rem solid #ccc;
+    color: red;
+    border-radius:50%;
+    width: 3rem;
+    height: 3rem;
+    text-align:center;
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+footer{
+	width: 100%;
+	height: 10rem;
+	background-color: lightgreen;
+}

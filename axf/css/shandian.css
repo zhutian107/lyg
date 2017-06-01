@@ -1,0 +1,153 @@
+#bigBox{
+	width: 100%;
+	/*height: 2000rem;*/
+	background:white;
+	height: 68rem;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+header{
+	width: 100%;
+	height: 5.373rem;
+	background:#FFD600; 
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+header h2{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 5.373rem;
+}
+.null{
+	width: 100%;
+	height:5.373rem; 
+}
+.dl_1{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.8rem;
+}
+.dl_1 dt img{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.lefts{
+	width: 8.2rem;
+	height: 60rem;
+	position: fixed;
+	overflow: auto;
+}
+.lefts_ul{
+	width: 8rem;
+	height: 61rem;
+	background-color: #F8f8f8;	
+}
+.lefts_ul li{
+	width: 100%;
+	height: 4.7rem;
+	border-bottom:0.05rem solid #ccc;
+	line-height: 4.8rem;
+	text-align: center;
+	font-size: 1.4rem;
+	color: gray;
+	box-sizing: border-box;
+}
+.rights{
+	width: 79%;
+    height: 33rem;
+    position: absolute;
+    right: 0;
+}
+.rights_null{  
+	width:100%;
+	height: 4.7rem; 
+}
+.rights_ul{
+    width: 79%;
+    height: 4.7rem;
+    position: fixed;
+    right: 0;
+    height: 4.7rem;
+    background:rgba(255,255,255,0.9);
+    display: flex;
+    justify-content: space-around;
+    line-height: 4.7rem;
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid #ccc;
+}
+.rights_shuju{
+	width: 100%;
+	height: auto;
+	font-size: 1.4rem;
+}
+.rights_shuju li div{
+	width: 100%;
+	height: 10rem;
+	border-bottom: 0.1rem solid #ccc;
+}
+.rights_shuju li{
+	display: flex;
+}
+.div_img{
+	flex:1;
+}
+.div_img img{
+	width: 3rem;
+	height:3rem;
+}
+.div_p1{
+	flex:2;
+}
+.rights_shuju li img{
+	width: 90%;
+	height: 85%;
+	margin-top: 1rem;
+}
+.rights_shuju li p{
+	margin-top: 0.5rem;
+}
+.p_name{
+	width: 80%;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.spa_01,.spa_02{
+	display: inline-block;
+	border-radius: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+.spa_01{
+	color: red;
+	border:0.2rem solid red;
+}
+.spa_02{
+	color: white;
+	background-color: red;
+}
+.spa_03{
+	display: inline-block;
+	color: red;
+	margin-right: 1rem;
+}
+.spa_04{
+	display: inline-block;
+	text-decoration: line-through;
+}
+.spa_05{
+	display: inline-block;
+	border:0.2rem solid #ccc;
+    color: red;
+    border-radius:50%;
+    width: 3rem;
+    height: 3rem;
+    text-align:center;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    float: right;
+    margin-right:1rem;
+}

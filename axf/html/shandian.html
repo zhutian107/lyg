@@ -1,0 +1,29 @@
+<div id="bigBox">
+    <header>
+	    <h2>驼坊营路附近</h2>
+	    <dl class="dl_1">
+	        <dt><img src="../images/img1/ico_search.png" alt=""></dt>
+	        <dd>搜索</dd>
+	    </dl>
+	</header>
+	<div class="null"></div>
+	<div class="lefts">
+       <ul class="lefts_ul">
+       		<li ng-repeat='ss1 in arr01'>{{ss1}}</li>
+       </ul>   
+	</div>
+	<div class="rights">
+        <ul class="rights_ul">
+        	<li>全部分类
+        	<span>∨</span></li>|
+        	<li>综合排序
+        	<span>∨</span></li>
+        </ul>
+        <div class='rights_null'></div>
+        <div class="rights_shuju">
+            <ul>
+            	<li ng-repeat='ss2 in arr02'><div class="div_img"><img src={{ss2.img}} alt=""></div><div class="div_p1"><p class="p_name">{{ss2.name}}</p><p><span class="spa_01">精选</span><span class="spa_02">{{ss2.pm_desc}}</span></p><p>{{ss2.specifics}}<span ng-click="add(ss2)" class="spa_05" >十</span></p><p><span class="spa_03">{{ss2.partner_price}}</span><span class="spa_04">{{ss2.market_price}}</span></p></div></li>
+            </ul>
+        </div>
+	</div>
+</div>
