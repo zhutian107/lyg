@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.head {
+  width: 100%;
+  height: 50px;
+  background: lightgreen; }
+  .head li {
+    float: left;
+    list-style: none;
+    margin-left: 100px; }
+
+#home {
+  width: 100%; }
+  #home li {
+    display: flex; }
+    #home li button {
+      width: 50px;
+      height: 20px;
+      display: none; }
+  #home li:hover button {
+    display: block; }
+
+#mine {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  #mine li {
+    width: 50%;
+    display: flex; }
+    #mine li button {
+      width: 50px;
+      height: 20px;
+      display: none; }
+  #mine li:hover button {
+    display: block; }

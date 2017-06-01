@@ -1,0 +1,11 @@
+
+<ul id="home">
+	<li ng-repeat="obj in arr">
+		<img ng-src="{{obj.img}}" alt="">
+		<div>
+			<h4>{{obj.title}}</h4>
+			<p>{{obj.main}}</p>
+		</div>
+		<button ng-click="btn()">移除</button>
+	</li>
+</ul>

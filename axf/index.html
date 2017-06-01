@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟月考</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">	
+</head>
+<body ng-app="myapp">
+	<ul class="head">
+		<li><a href="#/home" title=""><img src="images/p1.png" alt=""></a></li>
+		<li><a href="#/mine" title=""><img src="images/p2.png" alt=""></a></li>
+	</ul>
+	<div ng-view></div>
+</body>
+<script type="text/javascript" src='libs/jquery-3.1.1.js'></script>
+<script type="text/javascript" src='libs/angular.js'></script>
+<script type="text/javascript" src='libs/angular-route.js'></script>
+<script type="text/javascript" src='libs/angular-css.js'></script>
+<script type="text/javascript">
+	var app = angular.module('myapp',['ngRoute','angularCSS']);
+	app.config(['$locationProvider','$routeProvider',function($locationProvider,$routeProvider) {
+		$locationProvider.hashPrefix('');
+		$routeProvider
+		.when('/',{templateUrl:"html/home.html",controller:'home'})
+		.when('/mine',{templateUrl:"html/mine.html",controller:'mine'})
+		.otherwise('/');
+	}]);
+	app.controller('home',['$scope','$http',function($scope,$http){
+          $http.get('data/home.json').then(function(res){
+              $scope.arr = res.data;
+          })
+          $scope.btn = function (){
+          	  $scope.arr.splice(this.$index,1);
+          }
+	}])
+	app.controller('mine',['$scope','$http',function($scope,$http){
+          $http.get('data/home.json').then(function(res){
+              $scope.arr = res.data;
+          })
+           $scope.btn = function (){
+          	  $scope.arr.splice(this.$index,1)
+          }
+	}])
+</script>
+</html>
